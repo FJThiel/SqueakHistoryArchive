@@ -1,0 +1,29 @@
+
+==================================================================
+pub/Smalltalk/Squeak/applications/Webserver/WebServer.st
+==================================================================
+
+''WebServer.st
+Early version of my Squeak Web Server. Image roll forward and undo are not yet implemented.
+
+	TITLE			WebServer.st
+	AUTHOR			Georg Gollmann (gollmann@edvz.tuwien.ac.at)
+	VERSION			0.1.1
+	IMAGE VERSION	1.21
+	PREREQUISITES	miscChanges.st
+	DATE			August 19, 1997''!
+
+==================================================================
+pub/Smalltalk/Squeak/applications/Webserver/miscChanges.st
+==================================================================
+
+''miscChanges.st
+Some changes, fixes and additions. I recommend viewing this file as a changes list.
+
+
+	TITLE			miscChanges.st
+	AUTHOR			Georg Gollmann (gollmann@edvz.tuwien.ac.at)
+	VERSION			1.0
+	IMAGE VERSION	1.19d, 1.2
+	PREREQUISITES	none
+	DATE			April 21, 1997''!
