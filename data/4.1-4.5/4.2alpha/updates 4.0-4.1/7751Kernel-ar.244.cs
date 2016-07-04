@@ -1,0 +1,1 @@
+"Change Set:		7751Kernel-ar.244Kernel-ar.244:Restore ContextPart>>isBottomContext which for some reason got dropped in latest changes."!!ContextPart methodsFor: 'query' stamp: 'eem 12/31/2008 11:28'!isBottomContext	"Answer if this is the last context (the first context invoked) in my sender chain"	^sender isNil! !

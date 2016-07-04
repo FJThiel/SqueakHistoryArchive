@@ -1,0 +1,1 @@
+"Change Set:		9543Graphics-nice.114Graphics-nice.114:Fix endOfRun and crossedX encodings in paragraph composition - Part 3"!!TextStopConditions methodsFor: 'initialize-release' stamp: 'nice 4/17/2009 01:09'!setStops: stopArray	stops := stopArray copyFrom: 1 to: 256.	endOfRun := stopArray at: 257.	crossedX := stopArray at: 258.! !

@@ -1,0 +1,1 @@
+"Change Set:		9539Protocols-dtl.24Protocols-dtl.24:Move Project>>currentVocabulary methods to other packages to resolve MVC reloadability issue."!Project removeSelector: #currentVocabulary!MorphicProject removeSelector: #currentVocabulary!MVCProject removeSelector: #currentVocabulary!

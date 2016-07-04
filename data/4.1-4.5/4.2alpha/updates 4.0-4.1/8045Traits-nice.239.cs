@@ -1,0 +1,1 @@
+"Change Set:		8045Traits-nice.239Traits-nice.239:correct a missing #asSet after #keys refactoring"!!TraitBehavior methodsFor: 'accessing method dictionary' stamp: 'nice 10/21/2009 02:51'!allSelectors	^ self selectors asSet! !

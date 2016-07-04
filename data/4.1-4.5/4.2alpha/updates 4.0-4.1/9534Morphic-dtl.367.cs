@@ -1,0 +1,1 @@
+"Change Set:		9534Morphic-dtl.367Morphic-dtl.367:Move MorphicProject>>currentVocabulary from package Protocols to Morphic to address MVC reloadability issue"!!MorphicProject methodsFor: 'protocols' stamp: 'dtl 2/27/2010 10:19'!currentVocabulary	"Answer the currently-prevailing default vocabulary."	^ ActiveWorld currentVocabulary! !

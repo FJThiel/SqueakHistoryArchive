@@ -1,0 +1,1 @@
+"Change Set:		9491Installer-Core-ul.337Installer-Core-ul.337:- added a repository for source.squeak.org"!!Installer class methodsFor: 'repositories' stamp: 'ul 2/26/2010 23:38'!squeak	^self monticello http: 'source.squeak.org'! !

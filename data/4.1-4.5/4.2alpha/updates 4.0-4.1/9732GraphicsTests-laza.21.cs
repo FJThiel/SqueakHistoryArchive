@@ -1,0 +1,1 @@
+"Change Set:		9732GraphicsTests-laza.21GraphicsTests-laza.21:Make tests that expect a newer VM as expected failures/errors"!!BitBltTest methodsFor: 'testing' stamp: 'laza 3/21/2010 12:18'!expectedFailures	"Should be fixed in newer VMs"		^#(testAllAlphasRgbAdd testAllAlphasRgbMax testAllAlphasRgbMin testAllAlphasRgbMinInvert testAllAlphasRgbMul testAllAlphasRgbSub)! !

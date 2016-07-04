@@ -1,0 +1,1 @@
+"Change Set:		8777ST80-ar.82ST80-ar.82:Make Etoys unloadable: Remove selectionAsTiles support."!ParagraphEditor removeSelector: #selectionAsTiles!

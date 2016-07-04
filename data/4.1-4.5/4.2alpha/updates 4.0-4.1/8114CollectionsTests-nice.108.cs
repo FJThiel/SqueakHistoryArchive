@@ -1,0 +1,1 @@
+"Change Set:		8114CollectionsTests-nice.108CollectionsTests-nice.108:clean-up isSelfEvaluating"!ArrayTest removeSelector: #testIsSelfEvaluating!AssociationTest removeSelector: #testIsSelfEvaluating!RunArrayTest removeSelector: #testIsSelfEvaluating!IntervalTest removeSelector: #testIsEvaluating!

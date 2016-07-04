@@ -1,0 +1,1 @@
+"Change Set:		9852GraphicsTests-ar.22GraphicsTests-ar.22:4.1 release preparations: Remove the expectedFailures from BitBltTest - they are expected to pass for the release."!BitBltTest removeSelector: #expectedFailures!

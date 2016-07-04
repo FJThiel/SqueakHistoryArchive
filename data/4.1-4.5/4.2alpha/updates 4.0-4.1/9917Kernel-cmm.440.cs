@@ -1,0 +1,1 @@
+"Change Set:		9917Kernel-cmm.440Kernel-cmm.440:Fixed Duration bug."!!Duration class methodsFor: 'squeak protocol' stamp: 'cmm 4/8/2010 12:12'!milliSeconds: milliCount 	"Since seconds is 0 we can call the instance directly."	^ self		seconds: milliCount // 1000		nanoSeconds: (milliCount \\ 1000)*NanosInMillisecond! !

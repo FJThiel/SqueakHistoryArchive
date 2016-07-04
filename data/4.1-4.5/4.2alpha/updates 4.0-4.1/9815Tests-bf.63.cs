@@ -1,0 +1,1 @@
+"Change Set:		9815Tests-bf.63Tests-bf.63:- remove useless test that could accidentally wipe out your image directory, as reported on Pharo list by Laurent Laffont"!LocaleTest removeSelector: #testFontFullName!

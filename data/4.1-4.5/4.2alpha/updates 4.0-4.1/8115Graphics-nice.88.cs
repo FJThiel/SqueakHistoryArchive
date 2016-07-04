@@ -1,0 +1,1 @@
+"Change Set:		8115Graphics-nice.88Graphics-nice.88:clean-up isSelfEvaluating"!Color removeSelector: #isSelfEvaluating!Rectangle removeSelector: #isSelfEvaluating!Point removeSelector: #isSelfEvaluating!

@@ -1,0 +1,1 @@
+"Change Set:		8047Monticello-nice.329Monticello-nice.329:revert my previous changeRationale: #asSortedCollection is harmless and enable compatibility with other Squeak branchesMonticello-nice.328:classVarNames are already sorted now"!

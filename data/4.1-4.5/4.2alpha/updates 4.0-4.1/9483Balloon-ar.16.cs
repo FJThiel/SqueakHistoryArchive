@@ -1,0 +1,1 @@
+"Change Set:		9483Balloon-ar.16Balloon-ar.16:Cleanup for GradientFillStyle."!!GradientFillStyle class methodsFor: 'class initialization' stamp: 'ar 2/26/2010 23:02'!cleanUp	"Flush caches"	self initPixelRampCache! !

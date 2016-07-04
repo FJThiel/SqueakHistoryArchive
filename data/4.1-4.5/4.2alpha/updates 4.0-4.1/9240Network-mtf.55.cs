@@ -1,0 +1,1 @@
+"Change Set:		9240Network-mtf.55Network-mtf.55:7219: Improve Streams Usage Readabilityhttp://bugs.squeak.org/view.php?id=7219Adds << to streams to be mostly like nextPutAll, but uses putOn: so that it works with any object."!!SocketStream methodsFor: 'private' stamp: 'kph 11/6/2008 16:43'!<< items 	items putOn: self.		^ self! !

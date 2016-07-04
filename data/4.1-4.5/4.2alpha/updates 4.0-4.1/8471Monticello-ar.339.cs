@@ -1,0 +1,1 @@
+"Change Set:		8471Monticello-ar.339Monticello-ar.339:With the last MC update it should be safe to remove category from here and into the System package."!MethodReference removeSelector: #category!

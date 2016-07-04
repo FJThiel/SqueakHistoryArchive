@@ -1,0 +1,1 @@
+"Change Set:		9625ShoutCore-ar.13ShoutCore-ar.13:Fix incorrect Shout initialization."!!SHParserST80 methodsFor: 'accessing' stamp: 'ar 3/5/2010 22:03'!initialize	environment := Smalltalk globals.! !

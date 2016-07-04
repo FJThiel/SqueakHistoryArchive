@@ -1,0 +1,1 @@
+"Change Set:		9918Graphics-laza.132Graphics-laza.132:Addressing http://bugs.squeak.org/view.php?id=7213"!!Point methodsFor: 'comparing' stamp: 'laza 4/8/2010 11:26'!closeTo: aPoint	^(x closeTo: aPoint x) and: [y closeTo: aPoint y]! !

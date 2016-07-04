@@ -1,0 +1,1 @@
+"Change Set:		7894Exceptions-nice.13Exceptions-nice.13:Add signalWithDividend: method needed by license clean #reciprocal #/"!!ZeroDivide class methodsFor: 'signaling' stamp: 'GabrielOmarCotelli 6/6/2009 17:12'!signalWithDividend: aDividend	^(self dividend: aDividend) signal! !

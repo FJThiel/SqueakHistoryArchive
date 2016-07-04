@@ -1,0 +1,1 @@
+"Change Set:		7767SUnitGUI-laza.43SUnitGUI-laza.43:Display status always in red if there are any errors in TestRunner"!!TestRunner methodsFor: 'accessing-testing' stamp: 'laza 9/7/2009 15:11'!statusColor	result hasErrors 		ifTrue: [ ^ Color red ].	result hasFailures 		ifTrue:[ ^ Color yellow ].	^ Color green! !

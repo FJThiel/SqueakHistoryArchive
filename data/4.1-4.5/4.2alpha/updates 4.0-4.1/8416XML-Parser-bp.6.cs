@@ -1,0 +1,1 @@
+"Change Set:		8416XML-Parser-bp.6XML-Parser-bp.6:fixed typo in method comment"!!XMLNode methodsFor: 'searching' stamp: 'bp 12/4/2009 10:29'!tagsNamed: aSymbol ifReceiverDo: aOneArgumentBlock	"Handled only by XMLElement subclass"! !

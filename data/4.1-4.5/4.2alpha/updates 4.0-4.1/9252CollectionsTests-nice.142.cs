@@ -1,0 +1,1 @@
+"Change Set:		9252CollectionsTests-nice.142CollectionsTests-nice.142:Add test from Grease: (2 to: 1) anyOne should fail because empty."!!IntervalTest methodsFor: 'tests' stamp: 'nice 2/9/2010 20:44'!testAnyOne	self assert: ((2 to: 5) includes: (2 to: 5) anyOne).	self should: [(2 to: 1) anyOne] raise: Error description: 'This interval is empty'! !

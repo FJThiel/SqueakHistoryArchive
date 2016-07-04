@@ -1,0 +1,1 @@
+"Change Set:		8815PackageInfo-Base-nice.37PackageInfo-Base-nice.37:Protection if #withAllSubclasses does not answer a Set."!!PackageInfo methodsFor: 'testing' stamp: 'nice 1/5/2010 14:01'!outsideClasses	^ProtoObject withAllSubclasses asSet difference: self classesAndMetaClasses! !

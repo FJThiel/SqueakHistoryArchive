@@ -1,0 +1,1 @@
+"Change Set:		7298Collections-ar.98Collections-ar.98:Prerequiste changes for Closure installation."!!LookupKey methodsFor: 'testing' stamp: 'ar 8/14/2003 01:52'!isSpecialReadBinding	"Return true if this variable binding is read protected, e.g., should not be accessed primitively but rather by sending #value messages"	^false! !

@@ -1,0 +1,1 @@
+"Change Set:		7356MonticelloConfigurations-ar.54MonticelloConfigurations-ar.54:Back to MonticelloConfigurations-mha.42. The changes that were merged from squeaksource.com/mc relied on a different version of Monticello that are not present here. Since we need this stuff to work revert back to the previous version until we find out how to do the merge properly."!

@@ -1,0 +1,1 @@
+"Change Set:		9647Compiler-nice.135Compiler-nice.135:move OutOfScopeNotification to Compiler"!Notification subclass: #OutOfScopeNotification	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'Compiler-Exceptions'!!OutOfScopeNotification methodsFor: 'as yet unclassified' stamp: 'RAA 2/5/2001 10:41'!defaultAction	self resume: false! !

@@ -1,0 +1,1 @@
+"Change Set:		8646Kernel-ar.349Kernel-ar.349:Strange, somehow a class var was dropped during last check-in. Put it back."!

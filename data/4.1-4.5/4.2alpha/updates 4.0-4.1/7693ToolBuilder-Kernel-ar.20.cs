@@ -1,0 +1,1 @@
+"Change Set:		7693ToolBuilder-Kernel-ar.20ToolBuilder-Kernel-ar.20:Add UIManager support for a font-chooser dialog, based on the FreeTypePlus FontChooser interface."!!UIManager methodsFor: 'ui requests' stamp: 'ar 8/30/2009 16:44'!chooseFont: titleString for: aModel setSelector: setSelector getSelector: getSelector	"Open a font-chooser for the given model"! !

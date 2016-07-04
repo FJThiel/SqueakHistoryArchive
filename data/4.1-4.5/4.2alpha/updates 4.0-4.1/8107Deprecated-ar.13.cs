@@ -1,0 +1,1 @@
+"Change Set:		8107Deprecated-ar.1339Deprecated-ar.13:Remove support for isolation layers."!CurrentProjectRefactoring classSide removeSelector: #currentIsolationHead!CurrentProjectRefactoring classSide removeSelector: #currentPropagateChanges!CurrentProjectRefactoring classSide removeSelector: #currentBeIsolated!CompiledMethod removeSelector: #who!

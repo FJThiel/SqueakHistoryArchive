@@ -1,0 +1,1 @@
+"Change Set:		9751Universes-nice.43Universes-nice.43:Let nextPut: answer the put object.Same for nextPutAll:, answer the collection argument"!!UOneShotConnection methodsFor: 'string socket' stamp: 'nice 3/19/2010 19:07'!nextPut: anObject	outputQueue nextPut: anObject.	hasBeenWritten := true.	^anObject! !

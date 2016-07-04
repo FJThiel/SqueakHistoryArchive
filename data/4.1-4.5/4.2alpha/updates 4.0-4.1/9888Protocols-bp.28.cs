@@ -1,0 +1,1 @@
+"Change Set:		9888Protocols-bp.28Protocols-bp.28:make 'browse protocol' work again after introducing fixed height buttons"!Lexicon removeSelector: #buildCodePaneWith:!

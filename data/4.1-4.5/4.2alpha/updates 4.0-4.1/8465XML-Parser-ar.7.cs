@@ -1,0 +1,1 @@
+"Change Set:		8465XML-Parser-ar.7XML-Parser-ar.7:XMLWriter>>xmlDeclaration: to avoid needless extensions elsewhere."!!XMLWriter methodsFor: 'writing xml' stamp: 'ar 2/23/2005 16:35'!xmlDeclaration: versionString	self canonical		ifFalse: [			self				startPI: 'xml';				attribute: 'version' value: versionString;				endPI]! !

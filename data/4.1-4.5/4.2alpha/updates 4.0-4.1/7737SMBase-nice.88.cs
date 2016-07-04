@@ -1,0 +1,1 @@
+"Change Set:		7737SMBase-nice.88SMBase-nice.88:Avoid invoking super when self would do the job.( super basicNew issue http://bugs.squeak.org/view.php?id=6977 )"!!SMObject class methodsFor: 'instance creation' stamp: 'nice 9/5/2009 22:18'!newIn: aMap	"Create a new object in a given map with an UUID to ensure unique identity."	^(self basicNew) map: aMap id: UUID new! !

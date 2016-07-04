@@ -1,0 +1,1 @@
+"Change Set:		9827Files-nice.79Files-nice.79:Fix an _ in comment"!ReadWriteStream subclass: #CompressedSourceStream	instanceVariableNames: 'segmentFile segmentSize nSegments segmentTable segmentIndex dirty endOfFile'	classVariableNames: ''	poolDictionaries: ''	category: 'Files-System'!

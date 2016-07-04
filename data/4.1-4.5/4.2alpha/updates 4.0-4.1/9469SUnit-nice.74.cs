@@ -1,0 +1,1 @@
+"Change Set:		9469SUnit-nice.74SUnit-nice.74:Cuis 2.2 SUnitSpeedUp"!!TestCase class methodsFor: 'Accessing' stamp: 'jmv 2/2/2010 09:23'!testSelectors	^(self selectors asArray select: [ :each | 		(each beginsWith: 'test') and: [ each numArgs isZero ] ]) sort! !

@@ -1,0 +1,1 @@
+"Change Set:		7183Graphics-auto.44Graphics-auto.44:This is an automatic commit from the 3.10.2 to cover the delta between 3.10 and 3.10.2 in the repositories"!!AbstractFont methodsFor: 'testing' stamp: 'yo 2/12/2007 19:34'!isFontSet	^ false.! !

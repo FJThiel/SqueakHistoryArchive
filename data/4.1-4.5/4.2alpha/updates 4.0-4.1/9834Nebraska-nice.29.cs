@@ -1,0 +1,1 @@
+"Change Set:		9834Nebraska-nice.29Nebraska-nice.29:Remove a _ assignment from a class comment"!Object subclass: #CanvasEncoder	instanceVariableNames: 'connection lastClipRect lastTransform fontCache cachedObjects cachingEnabled'	classVariableNames: 'SentTypesAndSizes SimpleCounters'	poolDictionaries: ''	category: 'Nebraska-Morphic-Remote'!

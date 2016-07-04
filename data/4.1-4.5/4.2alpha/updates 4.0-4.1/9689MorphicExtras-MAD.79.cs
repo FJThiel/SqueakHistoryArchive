@@ -1,0 +1,1 @@
+"Change Set:		9689MorphicExtras-MAD.79MorphicExtras-MAD.79:A one-line change to make the Magnifier Morph eat less CPU."!!MagnifierMorph methodsFor: 'testing' stamp: 'MAD 3/3/2010 11:56'!stepTime	^ 100! !

@@ -1,0 +1,1 @@
+"Change Set:		9619PreferenceBrowser-ar.44PreferenceBrowser-ar.44:Move a few methods between various packages to make unload easier."!!PreferenceBrowser methodsFor: 'user interface' stamp: 'cmm 2/13/2010 20:08'!representsSameBrowseeAs: anotherModel	"If an existing Preference browser is on-screen, use it."	^ self class = anotherModel class! !

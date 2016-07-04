@@ -1,0 +1,1 @@
+"Change Set:		8929Services-Base-nice.42Services-Base-nice.42:remove useless non local return"!!SystemWindow methodsFor: '*services-base' stamp: 'nice 1/18/2010 19:17'!requestor	^[model requestor] 		on: Error 		do: [Transcript show: 'no requestor for : ', model class name. Requestor default] ! !

@@ -1,0 +1,1 @@
+"Change Set:		8837Compiler-ul.116Compiler-ul.116:- don't create a block in Dictionary >> #bindingOf:"!!Dictionary methodsFor: '*Compiler' stamp: 'ul 1/25/2010 18:57'!bindingOf: varName	^self associationAt: varName ifAbsent: nil! !

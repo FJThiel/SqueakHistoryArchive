@@ -1,0 +1,1 @@
+"Change Set:		9587KernelTests-cmm.142KernelTests-cmm.142:Incorporated test demonstrating broken Year>>#previous, for leap years."!!YearTest methodsFor: 'Tests' stamp: 'brp 6/16/2008 08:37'!testPreviousInLeapYear	| leap |	leap := Year year: 2008.	self assert: leap isLeapYear. 	self assert: (Year year: (leap year - 1)) = leap previous ! !

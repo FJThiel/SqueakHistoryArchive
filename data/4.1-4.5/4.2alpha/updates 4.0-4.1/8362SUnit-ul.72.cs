@@ -1,0 +1,1 @@
+"Change Set:		8362SUnit-ul.72SUnit-ul.72:- speed up TestCase >> allTestSelectorsSUnit-ul.71:- speed up test running"!!TestCase class methodsFor: 'accessing' stamp: 'ul 12/4/2009 03:44'!allTestSelectors	^(self allSelectors asArray select: [ :each | 		(each beginsWith: 'test') and: [ each numArgs isZero ] ]) sort			! !

@@ -1,0 +1,1 @@
+"Change Set:		8484Collections-ul.254Collections-ul.254:- removed HashedCollection >> #fullCheck, because it has no senders and it's private"!HashedCollection removeSelector: #fullCheck!

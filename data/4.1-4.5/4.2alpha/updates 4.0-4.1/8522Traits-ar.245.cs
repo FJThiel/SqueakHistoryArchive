@@ -1,0 +1,1 @@
+"Change Set:		8522Traits-ar.245Traits-ar.245:CompiledMethodTrailer phase 3."!!TCompilingBehavior methodsFor: 'compiling' stamp: 'Igor.Stasenko 12/20/2009 21:26'!defaultMethodTrailer	^ CompiledMethodTrailer empty! !

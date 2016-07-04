@@ -1,0 +1,1 @@
+"Change Set:		7187Monticello-auto.313Monticello-auto.313:This is an automatic commit from the 3.10.2 to cover the delta between 3.10 and 3.10.2 in the repositories"!!MCRepositoryGroup methodsFor: 'as yet unclassified' stamp: 'klc 5/25/2008 20:20'!versionWithInfo: aVersionInfo	^self versionWithInfo: aVersionInfo ifNone: [ nil ]! !

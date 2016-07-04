@@ -1,0 +1,1 @@
+"Change Set:		8670Traits-ar.254Traits-ar.254:Shipping NanoTraits part 2: Commit package back after NanoTraits install."!!Behavior methodsFor: '*Traits' stamp: 'al 9/16/2005 14:48'!providedSelectors	^ProvidedSelectors current for: self! !

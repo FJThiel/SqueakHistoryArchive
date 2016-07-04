@@ -1,0 +1,1 @@
+"Change Set:		8412PackageInfo-Base-nice.32PackageInfo-Base-nice.32:remove ReadStream>>#untilEnd:displayingProgress: because 100% = super codePackageInfo-Base-bp.31:remove seeClassSide which is not needed anymore since we have the 'no messages' category now"!PackageServices removeSelector: #seeClassSide!ReadStream removeSelector: #untilEnd:displayingProgress:!

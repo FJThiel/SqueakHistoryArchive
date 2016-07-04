@@ -1,0 +1,1 @@
+"Change Set:		8699Monticello-ar.348Monticello-ar.348:Final trait cleanup touches: Avoid direct MC extensions of traits (rather have traits check for MC presence). This will allow unloading of traits without modifying the MC package."!ClassTrait removeSelector: #asMCDefinition!Trait removeSelector: #classDefinitions!Trait removeSelector: #asClassDefinition!

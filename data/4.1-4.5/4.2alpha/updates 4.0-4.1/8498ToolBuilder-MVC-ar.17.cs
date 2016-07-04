@@ -1,0 +1,1 @@
+"Change Set:		8498ToolBuilder-MVC-ar.17ToolBuilder-MVC-ar.17:Fix tests for side effects on button signals."!!MVCToolBuilderTests methodsFor: 'support' stamp: 'ar 12/15/2009 15:09'!expectedButtonSideEffects	^#(getState)! !MVCToolBuilderTests removeSelector: #testGetButtonSideEffectFree!

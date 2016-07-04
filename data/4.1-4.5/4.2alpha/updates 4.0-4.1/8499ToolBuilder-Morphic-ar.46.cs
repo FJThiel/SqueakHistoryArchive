@@ -1,0 +1,1 @@
+"Change Set:		8499ToolBuilder-Morphic-ar.46ToolBuilder-Morphic-ar.46:Fix tests for side effects on button signals."!!MorphicToolBuilderTests methodsFor: 'support' stamp: 'ar 12/15/2009 15:08'!expectedButtonSideEffects	^#(getColor getState getEnabled)! !

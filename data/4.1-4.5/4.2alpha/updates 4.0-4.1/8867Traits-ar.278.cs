@@ -1,0 +1,1 @@
+"Change Set:		8867Traits-ar.278Traits-ar.278:Adds a class comment to TraitOrganizer (really this is to test the updated server image)."!ClassOrganizer subclass: #TraitOrganizer	instanceVariableNames: 'traitComposition'	classVariableNames: ''	poolDictionaries: ''	category: 'Traits-Kernel'!

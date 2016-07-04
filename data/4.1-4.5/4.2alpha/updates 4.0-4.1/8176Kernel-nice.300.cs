@@ -1,0 +1,1 @@
+"Change Set:		8176Kernel-nice.300Kernel-nice.300:Fix evaluation of Block copy in case of local return"!BlockClosure removeSelector: #postCopy!

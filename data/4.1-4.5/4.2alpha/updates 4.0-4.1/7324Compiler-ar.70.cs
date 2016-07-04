@@ -1,0 +1,1 @@
+"Change Set:		7324Compiler-ar.70Compiler-ar.70:Compile using Closures!"!!Parser methodsFor: 'public access' stamp: 'eem 6/19/2008 09:38'!encoder	encoder isNil ifTrue:		[encoder := EncoderForV3PlusClosures new].	^encoder! !

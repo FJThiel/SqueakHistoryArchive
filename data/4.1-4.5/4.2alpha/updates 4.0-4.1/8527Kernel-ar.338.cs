@@ -1,0 +1,1 @@
+"Change Set:		8527Kernel-ar.338Kernel-ar.338:Remove *just* CompiledMethodTrailer>>new to fix the load issue encountered earlier."!CompiledMethodTrailer class removeSelector: #new!

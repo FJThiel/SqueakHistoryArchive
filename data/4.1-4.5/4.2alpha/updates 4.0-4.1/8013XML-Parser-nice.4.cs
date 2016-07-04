@@ -1,0 +1,1 @@
+"Change Set:		8013XML-Parser-nice.4XML-Parser-nice.4:use #fasterKeys"!!XMLWriter methodsFor: 'writing xml' stamp: 'nice 10/19/2009 22:33'!startElement: elementName attributeList: attributeList	self canonical		ifFalse: [self stream cr].	self startTag: elementName.	attributeList fasterKeys sort do: [:key |		self attribute: key value: (attributeList at: key)]! !

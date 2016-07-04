@@ -1,0 +1,1 @@
+"Change Set:		7954Tools-ul.134Tools-ul.134:- added BlockClosure >> #timeProfile which opens a TimeProfileBrowser on the block"!!BlockClosure methodsFor: '*Tools' stamp: 'ul 10/9/2009 00:19'!timeProfile	^TimeProfileBrowser onBlock: self! !

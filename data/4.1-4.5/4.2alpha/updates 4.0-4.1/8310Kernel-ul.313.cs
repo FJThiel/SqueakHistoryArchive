@@ -1,0 +1,1 @@
+"Change Set:		8310Kernel-ul.313Kernel-ul.313:Part 2 of updating Object >> #hash."!!Object methodsFor: 'comparing' stamp: 'ul 12/1/2009 04:20'!hash	"Answer a SmallInteger whose value is related to the receiver's identity.	May be overridden, and should be overridden in any classes that define = "	^self scaledIdentityHash! !

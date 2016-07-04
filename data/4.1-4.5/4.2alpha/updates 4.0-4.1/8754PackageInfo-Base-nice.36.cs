@@ -1,0 +1,1 @@
+"Change Set:		8754PackageInfo-Base-nice.36PackageInfo-Base-nice.36:remove some #or:or: #and:and: sends"!!PackageInfo methodsFor: 'listing' stamp: 'nice 1/1/2010 21:54'!methods	^ (self extensionMethods, self coreMethods) select: [:method |		method isValid			and: [method isLocalSelector			and: [method methodSymbol isDoIt not]]]! !

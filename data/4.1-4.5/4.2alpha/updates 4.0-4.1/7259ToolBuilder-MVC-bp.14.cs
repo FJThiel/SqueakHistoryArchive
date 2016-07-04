@@ -1,0 +1,1 @@
+"Change Set:		7259ToolBuilder-MVC-bp.14ToolBuilder-MVC-bp.14:Added tearDown to restore display"!!MVCToolBuilderTests methodsFor: 'support' stamp: 'bp 7/9/2009 00:18'!tearDown	ScreenController new restoreDisplay.	super tearDown! !

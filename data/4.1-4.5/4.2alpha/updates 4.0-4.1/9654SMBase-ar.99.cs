@@ -1,0 +1,1 @@
+"Change Set:		9654SMBase-ar.99SMBase-ar.99:Get rid of a few *smbase extensions/overrides."!SystemVersion removeSelector: #majorMinorVersion!VersionNumber removeSelector: #versionStringOn:!VersionNumber removeSelector: #versionString!

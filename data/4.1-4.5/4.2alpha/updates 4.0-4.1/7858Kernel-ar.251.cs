@@ -1,0 +1,1 @@
+"Change Set:		7858Kernel-ar.251Kernel-ar.251:Merging Kernel-ul.249:- added MethodDictionary >> #postCopy to replace #copy"!!MethodDictionary methodsFor: 'copying' stamp: 'ul 9/22/2009 04:52'!postCopy	array := array shallowCopy! !

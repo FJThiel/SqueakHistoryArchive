@@ -1,0 +1,1 @@
+"Change Set:		9741PreferenceBrowser-laza.45PreferenceBrowser-laza.45:Fix missing :"!!PBBooleanPreferenceView class methodsFor: 'class initialization' stamp: 'laza 3/19/2010 14:02'!unload	"Unload order is not guaranteed so guard against failure"	[PreferenceViewRegistry ofBooleanPreferences unregister: self] on: Error do:[].! !
