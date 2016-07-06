@@ -1,0 +1,120 @@
+	This is the ANSI Smalltalk Interchange Format (SIF) Alpha v1.1 project Read Me file for Squeak v2.5.
+
+	Richard A. Harmon
+	harmonra@webname.com
+
+ ******
+ * $Name: SIFa01r01Sqkv02r05 $
+ * $Id: SIFRdMe.txt 1.2 1999-10-14 13:14:31-05 Harmon Alpha $
+ * $Log: SIFRdMe.txt $
+ * Revision 1.2  1999-10-14 13:14:31-05  Harmon
+ * Fixed install script.
+ *
+ * Revision 1.1  1999-10-13 14:33:24-05  Harmon
+ * Initial revision
+ *
+ ******
+
+
+Table Of Contents:
+
+	Installation
+	Introduction
+	Documentation
+	Test Files
+	Implementation
+
+
+Installation:
+
+	Unzip files into the desired directory
+		or into C: using directory information.
+
+	"Change the directories as needed and evaluate the following
+	with 'do it' to file in the SIF enhancements:"
+	| sifDir |
+	sifDir := 'C:\Squeak25\SIFa0101'.	"Directory containing SIF files."
+	#( 'HashedSt.st' 'ExcpCore.cs' 'ExcpExtn.cs' 'PortFunc.st' 'Stack.st'
+		'SIFMod.st' 'SIFUI.st'
+	)  do: [ :filename |
+		Transcript cr; cr; endEntry.
+		ChangeSorter
+			newChangesFromStream: (FileStream
+				readOnlyFileNamed: (sifDir, '\', filename))
+			named: filename.
+	].
+
+
+	If all files are unzipped into a desired directory, when you test installing a program with a prerequisite program in a different directory this aspect of the install facility will not be fully exercised.  I consider this a minor drawback.
+	If unzipped using directory information the files will be placed as shown below:
+
+	C:\Squeak25\SIFa0101
+		SIFRdMe.txt	- This file.
+		HashedSt.st	- Adds support for quoted symbols (#'abc').
+		ExcpCore.cs	- TFEI ANSI Exceptions Core.
+		ExcpExtn.cs	- TFEI ANSI Exceptions Extensions.
+		PortFunc.st	- Squeak implementation of portable
+						functions commonly needed in
+						applications but implemented
+						differently in each dialect.
+		Stack.st		- Squeak implementation of Stack.
+		SIFMod.st	- ANSI SIF model additions.
+		SIFUI.st		- ANSI SIF user interface additions.
+		\Tests
+			PgmOk08A.sif	- A sample SIF test file
+							with no errors, sets
+							and prerequisites.
+			PgmOk08X.sif	- A sample prerequisite
+							empty SIF test file.
+			PgmOk08Y.sif	- A sample prerequisite
+							empty SIF test file
+							with prerequisites.
+			\DifDir
+				PgmOk08Z.sif	- A sample prerequisite
+								SIF test file in a
+								different directory.
+
+Introduction:
+
+	The SIF project implements a facility to read and write files of Smalltalk code in the portable ANSI Smalltalk Interchange Format.  Each SIF file consists of a set of definitions which form part or all of a Smalltalk program.  Each definition such as a class, global, method, or pool, etc. definition (or initialization) represents a program element. 
+	Programs are managed (created, removed, loaded, installed, etc.) by the ProgramManager class through the graphical user interface ProgramBrowserShell class.  Loading only reads the program's components so they may be viewed with the program editor.  Installing installs a program and all prerequisite programs.  It first loads a program, then evaluates (creates/initializes) the Smalltalk objects specified by the program elements which, without the prerequisite handling, is roughly equivalent to file in.
+	A program is edited (elements created, removed, moved, etc.) through the graphical user interface ProgramEditorShell class.  A SIF enhancement, implemented so as to not break existing implementations, allows collections of program elements to be grouped in component sets and the nesting of component sets in a tree structure.
+	A program or individual elements can have annotations of author, category, comment, etc.
+
+
+Documentation:
+
+	The starting point for documentation is the class comment:
+
+	Portable Functions Protocols - PortableFunctions
+	SIF Model Protocols - ProgramManager
+	SIF User Interface Protocols -  ProgramBrowserShell
+
+	I noted most if not all significant limitations, outstanding issues, implementation decisions, and disabled functionality in the documentation in each class comment.
+	I recommend reading these comments and noting the limitations and disabled functionality.
+	I hope to eventually generate programmatically the documentation including each protocol in a HTML document with a format and content similar to that of the Draft ANSI Smalltalk Standard.
+	The program browser and program editor really need documentation on how to use them and of the menu items.
+
+
+Test Files:
+
+	I have included rudimentary test files with set enhancements and prerequisites to illustrate my understanding of the interchange format, and to exercise my code.  The dependencies are as follows:
+
+	PgmOk08A.sif
+	    requires PgmOk08X.sif
+	    and PgmOk08Y.sif
+		  requires PgmOk08Z.sif in
+		   different directory \Tests\DifDir
+
+	They contain no errors as my error handling is somewhat clumsy and inadequate.  A suite of test files with errors needs to be developed.
+
+
+Implementation:
+
+	This is an "alpha" release that will read and write files in a portable fashion between dialects that implement SIF filing.  Some features are partially implemented or commented out because I have not fully thought through their implementation, or they would require considerable work.  The most significant of these is the program browser and program editor which I consider barely usable.  There is almost no optimization.
+	I am uncertain if my implementation is a useful starting point for SIF filing, and thus I am releasing this incomplete version in order to get comments on my whole approach as well as individual aspects.  If it proves useful, I will continue to improve it.  If not, I'll throw it away and go back to the drawing board.
+	The first implementation was on Smalltalk Express (SE), it was then ported to Squeak and enhanced, then ported to Dolphin and enhanced, then ported back to Squeak with an eye towards ease of implementation in a new dialect.  I think it can be easily ported to any dialect that implements exception error handling.  It makes very few changes to the base system classes, other than additional methods.
+	I will gladly assist in any way I can anyone porting SIF to another dialect.
+	All comments are welcome.  If you find a bug, or have a suggestion, please drop me an email at the address above.
+
+

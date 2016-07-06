@@ -1,0 +1,188 @@
+"	This Squeak format file is an implementation of one additional class for the exception handling system (EHS) and a few additional methods which make use of the newly installed classes.  Although the latter code is not required by the ANSI standard, it does not diminish conformance, and we consider it a logical extension of even a minimal ANSI-based implementation such as this one.
+	  The EHS can be downloaded from the following web site:  The Fourth Estate, Inc. web address is http://www.4thEstate.com.  Send email to squeak@4thEstate.com  Originally named TFEI-Exceptions-extensions.cs.
+
+ ******
+ * $Name:  $
+ * $Id: ExcpExtn.cs 1.1 1999-10-12 07:51:07-05 Harmon Alpha $
+ * $Log: ExcpExtn.cs $
+ * Revision 1.1  1999-10-12 07:51:07-05  Harmon
+ * Initial revision
+ *
+ ******"!
+
+'From Squeak 2.3 of January 14, 1999 on 5 June 1999 at 7:04:57 pm'!
+Error subclass: #Halt
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'TFEI-Exceptions-Extensions'!
+
+!Object methodsFor: 'error handling' stamp: 'tfei 4/12/1999 10:20'!
+doesNotUnderstand: aMessage 
+	 "Handle the fact that there was an attempt to send the given message to the receiver but the receiver does not understand this message (typically sent from the machine when a message is sent to the receiver and no method is defined for that selector)."
+	"Testing: (3 activeProcess)"
+
+	(Preferences autoAccessors and: [self tryToDefineVariableAccess: aMessage])
+		ifTrue: [^ aMessage sentTo: self].
+	MessageNotUnderstood new message: aMessage;
+		signal.
+	^aMessage sentTo: self! !
+
+!Object methodsFor: 'error handling' stamp: 'tfei 4/12/1999 12:55'!
+error: aString 
+	"Throw a generic Error exception."
+
+	^Error new signal: aString! !
+
+!Object methodsFor: 'error handling' stamp: 'tfei 4/12/1999 12:54'!
+halt
+	"This is the typical message to use for inserting breakpoints during 
+	debugging. It behaves like halt:, but does not call on halt: in order to 
+	avoid putting this message on the stack. Halt is especially useful when 
+	the breakpoint message is an arbitrary one."
+
+	Halt signal! !
+
+!Object methodsFor: 'error handling' stamp: 'tfei 4/12/1999 12:59'!
+halt: aString 
+	"This is the typical message to use for inserting breakpoints during 
+	debugging. It creates and schedules a Notifier with the argument, 
+	aString, as the label."
+	
+	Halt new signal: aString! !
+
+
+!Float methodsFor: 'arithmetic' stamp: 'tfei 4/12/1999 12:45'!
+/ aNumber 
+	"Primitive. Answer the result of dividing receiver by aNumber.
+	Fail if the argument is not a Float. Essential. See Object documentation
+	whatIsAPrimitive."
+
+	<primitive: 50>
+	aNumber = 0 ifTrue: [^(ZeroDivide dividend: self) signal].
+	^ aNumber adaptToFloat: self andSend: #/! !
+
+
+!Fraction methodsFor: 'private' stamp: 'tfei 4/12/1999 12:45'!
+setNumerator: n denominator: d
+
+	d = 0
+		ifTrue: [^(ZeroDivide dividend: n) signal]
+		ifFalse: 
+			[numerator _ n asInteger.
+			denominator _ d asInteger abs. "keep sign in numerator"
+			d < 0 ifTrue: [numerator _ numerator negated]]! !
+
+
+!Halt commentStamp: '<historical>' prior: 0!
+Halt is provided to support Object>>halt.!
+
+!Halt methodsFor: 'description' stamp: 'tfei 5/10/1999 14:24'!
+isResumable
+
+	^true! !
+
+
+!Integer methodsFor: 'private' stamp: 'tfei 4/12/1999 12:45'!
+digitDiv: arg neg: ng 
+	"Answer with an array of (quotient, remainder)."
+	| quo rem ql d div dh dnh dl qhi qlo j l hi lo r3 a t |
+	arg = 0 ifTrue: [^(ZeroDivide dividend: self) signal].	"TFEI added this line"
+	l _ self digitLength - arg digitLength + 1.
+	l <= 0 ifTrue: [^Array with: 0 with: self].
+	d _ 8 - arg lastDigit highBit.
+	div _ arg digitLshift: d.  div _ div growto: div digitLength + 1.
+	"shifts so high order word is >=128"
+	rem _ self digitLshift: d.
+	rem digitLength = self digitLength ifTrue:
+		[rem _ rem growto: self digitLength + 1].
+	"makes a copy and shifts"
+	quo _ Integer new: l neg: ng.
+	dl _ div digitLength - 1.
+	"Last actual byte of data"
+	ql _ l.
+	dh _ div digitAt: dl.
+	dnh _ dl = 1
+			ifTrue: [0]
+			ifFalse: [div digitAt: dl - 1].
+	1 to: ql do: 
+		[:k | 
+		"maintain quo*arg+rem=self"
+		"Estimate rem/div by dividing the leading to bytes of rem by dh."
+		"The estimate is q = qhi*16+qlo, where qhi and qlo are nibbles."
+		j _ rem digitLength + 1 - k.
+		"r1 _ rem digitAt: j."
+		(rem digitAt: j) = dh
+			ifTrue: [qhi _ qlo _ 15"i.e. q=255"]
+			ifFalse: 
+				["Compute q = (r1,r2)//dh, t = (r1,r2)\\dh.  
+				Note that r1,r2 are bytes, not nibbles.  
+				Be careful not to generate intermediate results exceeding 13 bits."
+				"r2 _ (rem digitAt: j - 1)."
+				t _ ((rem digitAt: j) bitShift: 4) + ((rem digitAt: j - 1) bitShift: -4).
+				qhi _ t // dh.
+				t _ (t \\ dh bitShift: 4) + ((rem digitAt: j - 1) bitAnd: 15).
+				qlo _ t // dh.
+				t _ t \\ dh.
+				"Next compute (hi,lo) _ q*dnh"
+				hi _ qhi * dnh.
+				lo _ qlo * dnh + ((hi bitAnd: 15) bitShift: 4).
+				hi _ (hi bitShift: -4) + (lo bitShift: -8).
+				lo _ lo bitAnd: 255.
+				"Correct overestimate of q.  
+				Max of 2 iterations through loop -- see Knuth vol. 2"
+				r3 _ j < 3 ifTrue: [0]
+						 ifFalse: [rem digitAt: j - 2].
+				[(t < hi or: [t = hi and: [r3 < lo]]) and: 
+						["i.e. (t,r3) < (hi,lo)"
+						qlo _ qlo - 1.
+						lo _ lo - dnh.
+						lo < 0 ifTrue: 
+								[hi _ hi - 1.
+								lo _ lo + 256].
+						hi >= dh]]
+					whileTrue: [hi _ hi - dh].
+				qlo < 0
+					ifTrue: 
+						[qhi _ qhi - 1.
+						qlo _ qlo + 16]].
+		"Subtract q*div from rem"
+		l _ j - dl.
+		a _ 0.
+		1 to: div digitLength do: 
+			[:i | 
+			hi _ (div digitAt: i) * qhi.
+			lo _ a + (rem digitAt: l) 
+					- ((hi bitAnd: 15) bitShift: 4) 
+					- ((div digitAt: i) * qlo).
+			rem digitAt: l
+				put: lo - (lo // 256 * 256) "sign-tolerant form of (lo bitAnd: 255)".
+			a _ (lo // 256) - (hi bitShift: -4).
+			l _ l + 1].
+		a < 0 ifTrue: 
+				["Add div back into rem, decrease q by 1"
+				qlo _ qlo - 1.
+				l _ j - dl.
+				a _ 0.
+				1 to: div digitLength do: 
+					[:i | 
+					a _ (a bitShift: -8) + (rem digitAt: l) + (div digitAt: i).
+					rem digitAt: l put: (a bitAnd: 255).
+					l _ l + 1]].
+		quo digitAt: quo digitLength + 1 - k put: (qhi bitShift: 4) + qlo].
+	rem _ rem digitRshift: d bytes: 0 lookfirst: dl.
+	^Array with: quo with: rem! !
+
+
+!SmallInteger methodsFor: 'arithmetic' stamp: 'tfei 4/12/1999 12:45'!
+/ aNumber 
+	"Primitive. This primitive (for /) divides the receiver by the argument
+	and returns the result if the division is exact. Fail if the result is not a
+	whole integer. Fail if the argument is 0 or is not a SmallInteger. Optional.
+	No Lookup. See Object documentation whatIsAPrimitive."
+
+	<primitive: 10>
+	aNumber = 0 ifTrue: [^(ZeroDivide dividend: self) signal].
+	(aNumber isMemberOf: SmallInteger)
+		ifTrue: [^(Fraction numerator: self denominator: aNumber) reduced]
+		ifFalse: [^super / aNumber]! !
