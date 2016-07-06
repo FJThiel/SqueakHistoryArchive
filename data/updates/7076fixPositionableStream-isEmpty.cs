@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 30 March 2007 [latest update: #7073] on 2 April 2007 at 9:07:01 am'!"To follow this seehttp://bugs.squeak.org/view.php?id= 2273"ReleaseBuilderFor3dot10 new updatePackages: 'Kernel-edc.153(152).mcdCollections-edc.75(73).mcdCollectionsTests-edc.64(63).mcd'!

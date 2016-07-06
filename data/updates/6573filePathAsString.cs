@@ -1,0 +1,1 @@
+'From Squeak3.8gamma of ''24 November 2004'' [latest update: #6550] on 23 February 2005 at 4:48:38 pm'!"Change Set:		FilePathAsStringDate:			23 February 2005Author:			Andreas RaabAdds FilePath>>asString as alternative to FilePath>>asSqueakPathName"!!FilePath methodsFor: 'conversion' stamp: 'ar 1/31/2005 11:16'!asString	^self asSqueakPathName! !

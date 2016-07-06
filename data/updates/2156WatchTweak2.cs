@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 12 January 2000 [latest update: #2155] on 16 May 2000 at 11:22:40 pm'!Morph subclass: #WatchMorph	instanceVariableNames: 'fontName cColor handsColor romanNumerals '	classVariableNames: ''	poolDictionaries: ''	category: 'Morphic-Demo'!

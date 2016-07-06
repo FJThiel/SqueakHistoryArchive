@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 12 June 2000 [latest update: #3379] on 2 February 2001 at 3:14:05 pm'!!SerialPort methodsFor: 'input/output' stamp: 'yo 2/2/2001 15:13'!nextPutAll: aStringOrByteArray	"Send the given bytes out this serial port. The port must be open."	^ self primWritePort: port		from: aStringOrByteArray		startingAt: 1		count: aStringOrByteArray size.! !

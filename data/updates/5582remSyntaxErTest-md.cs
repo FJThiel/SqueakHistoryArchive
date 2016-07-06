@@ -1,0 +1,1 @@
+'From Squeak3.7alpha of ''11 September 2003'' [latest update: #5566] on 24 November 2003 at 4:16:44 pm'!"Change Set:		remSyntaxErTest-mdDate:			24 November 2003Author:			Marcus DenkerThis just removes a TestCase that was added in the lastround of updates. The test will be added to the testsuite."!Smalltalk removeClassNamed: #SyntaxErrorNotificationTest!

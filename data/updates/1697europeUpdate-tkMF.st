@@ -1,0 +1,1 @@
+"When the user has a choice of servers to get Updates from, include the European server maintained by Bert Freudenberg."Utilities updateUrlLists detect: [:list | list first = 'European Squeak Updates'] 		ifNone: [(Utilities classPool at: #UpdateUrlLists) addLast: 		#('European Squeak Updates' ('www.gsug.org/Squeak2.0/' ))].!

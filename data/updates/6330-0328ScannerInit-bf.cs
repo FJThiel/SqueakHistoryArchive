@@ -1,0 +1,1 @@
+'From Squeakland 3.8.5976 of 25 August 2004 [latest update: #327] on 1 October 2004 at 9:59:15 am'!"Change Set:		ScannerInit-bfDate:			1 October 2004Author:			Bert FreudenbergInitialize Scanner to fix Bug #196 as suggested by Yoshiki"!"Postscript:Init scanner to fix non-ascii character problem"Scanner initialize!

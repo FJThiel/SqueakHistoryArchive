@@ -1,0 +1,1 @@
+'From Squeak3.8alpha of ''17 July 2004'' [latest update: #6212] on 21 September 2004 at 4:19:01 pm'!"Change Set:		SmalltalkEndiannesDate:			21 September 2004Author:			stephane ducassedeprecate SmalltalkEndianness unique method"!Smalltalk removeClassNamed: #SystemEndiannes!

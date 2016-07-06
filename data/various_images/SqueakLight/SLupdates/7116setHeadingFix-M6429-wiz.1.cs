@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7113] on 10 June 2008 at 11:15:59 am'!!TransformationMorph methodsFor: 'geometry eToy' stamp: 'wiz 4/18/2007 01:16'!heading: newHeading "If we have a rendee set its heading. Else do nothing." | rendee |( rendee := self renderedMorph) == self ifTrue: [ ^ self  ] .	^rendee heading: newHeading! !

@@ -1,0 +1,16 @@
+'From Squeak3.7beta of ''1 April 2004'' [latest update: #5963] on 22 June 2004 at 8:51:57 pm'!"Change Set:		BehaviorHashEnh v1.2Date:			22 June 2004, 16.02.2006Author:			Stephan Rudlof, md
+
+md: added a line to the poscript to uncompactify the MethodProperties class. We want to add an instVar for the selector.
+Improves the default Object>>hash for Behaviors by installing Behavior>>hash. String>>hash has been changed a little to avoid infinite recursion (without changing its semantics).All is done in the postscript.Important-----------This is a special changeset: Do not export and import this changeset again after importing it the first time!! Then the methods are not installed alone in the postscript anymore, leading to serious problems!!-----------Rationale: Object>>hash calling ProtoObject>>identityHash gives poor results for Behaviors. Therefore a new Behavior>>hash using Symbol>>hash or String>>hash (the latter slightly changed to avoide infinite recursion) will be installed.Consequences:- It speeds up Set/Dictionary operations with Behaviors a lot (see below).- The main consequence for other objects as Behaviors seems to be a changed hash if they use	self species hashas a start value for computing their hash.But AFAICS this doesn't hurt, since in most cases (non meta classes as species) it maps to Symbol>>hash, which is fast.Test:doIt	| allClasses allClassesSet block |	allClasses := Smalltalk allClasses.	block _ [allClassesSet _ allClasses asSet.			[allClasses do: [:class | allClassesSet remove: class]] timeToRun].	{block value. block value. block value}before and after filing in this cs.To see the problem again just doIt	| allClasses allClassesSet block |	allClasses := Smalltalk allClasses.	block _ [allClassesSet _ allClasses asIdentitySet.			[allClasses do: [:class | allClassesSet remove: class]] timeToRun].	{block value. block value. block value}.Future: Best would probably be a better identityHash with more bits (possibly in V4?).PS: I've been stumbled over BrowserEnvironmentTest>>testAllClassesDo, which is dog slow without this cs.History--------
+- v1.2: md, fix for latest 3.9a- v1.1: changed cs comment- without v no: original version--------"!"Postscript:Compile String and Behavior >>hash here, since compilation has to be tight together with rehashing Sets possibly containing objects with changed >>hash."
+
+"I want to add a variable... "
+MethodProperties becomeUncompact.
+
+Utilities setAuthorInitials: 'md'.
+String compile:'hash	"#hash is implemented, because #= is implemented"	"ar 4/10/2005: I had to change this to use ByteString hash as initial 	hash in order to avoid having to rehash everything and yet compute	the same hash for ByteString and WideString.
+	md 16/10/2006: use identityHash as initialHash, as behavior hash will 
+    use String hash (name) to have a better hash soon"	^ self class stringHash: self initialHash: ByteString identityHash'.			Set quickRehashAllSets.Behavior compile:'hash	^ self name hash'.	Set quickRehashAllSets.
+
+Utilities setAuthorInitials: ''.
+!

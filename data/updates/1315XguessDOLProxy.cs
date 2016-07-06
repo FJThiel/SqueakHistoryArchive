@@ -1,0 +1,1 @@
+'From Squeak 2.4c of May 10, 1999 on 10 July 1999 at 9:04:04 am'!"Change Set:		guessDOLProxyDate:			10 July 1999Author:			John MaloneyCode suppressed for external release."!

@@ -1,0 +1,1 @@
+'From Squeak 2.4c of May 10, 1999 on 27 July 1999 at 10:24:38 am'!"Change Set:		WorldState3Date:			27 July 1999Author:			Dan IngallsRecompiles PasteUpMorph to clean up after renaming of worldState variable."!!PasteUpMorph methodsFor: 'cursor' stamp: 'di 7/27/1999 10:24'!cursor 	^ cursor! !"Postscript:Recompile PasteUpMorph."PasteUpMorph compileAll!

@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 12 June 2000 [latest update: #2342] on 12 June 2000 at 11:04:50 pm'!"Change Set:		BaseUpdateFor28Date:			12 June 2000Author:			Dan IngallsThis update sets the base numbering for updates to Squeak2.8."!

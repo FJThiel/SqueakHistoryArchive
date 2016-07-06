@@ -1,0 +1,1 @@
+'From Squeak 2.3 of January 14, 1999 on 16 March 1999 at 9:38:12 pm'!!TranscriptStream methodsFor: 'access' stamp: 'di 3/16/1999 21:38'!characterLimit	"Tell the views how much to retain on screen"	^ 20000! !

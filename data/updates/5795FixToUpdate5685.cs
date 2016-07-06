@@ -1,0 +1,1 @@
+'From Squeak3.7alpha of 11 September 2003 [latest update: #5763] on 3 March 2004 at 11:26:40 pm'!"Change Set:		FixToUpdate5685CursorWithMaskFixDate:			29 February 2004Author:			Karl RambergPostscript in update 5685 was commented out, so that the fix hadn't taken effect yet.  Fixed here"!"Postscript:"Cursor initialize!

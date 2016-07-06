@@ -1,0 +1,1 @@
+'From Squeak 2.2 of Sept 23, 1998 on 3 November 1998 at 1:14:42 am'!!InterpreterPlugin class methodsFor: 'translation' stamp: 'ar 11/3/1998 01:14'!translateDoInlining: inlineFlag	"Time millisecondsToRun: [		FloatArrayPlugin translateDoInlining: true.		Smalltalk beep]"	^self translate: (self moduleName,'.c') doInlining: inlineFlag! !

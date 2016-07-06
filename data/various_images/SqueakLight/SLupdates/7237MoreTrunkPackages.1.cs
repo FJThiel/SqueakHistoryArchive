@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7236] on 11 August 2009 at 12:00:10 pm'!"Change Set:		7237MoreTrunkPackagesDate:			11 August 2009Author:			Edgar J. De CleeneAll these could be loaded and if some is missed , system loads "ReleaseBuilderFor3dot11 new loadLastVersion: #('Exceptions' 'Files' 'Multilingual' 'Network')!

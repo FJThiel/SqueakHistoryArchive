@@ -1,0 +1,1 @@
+'From Squeak3.7alpha of 11 September 2003 [latest update: #5707] on 16 February 2004 at 6:59:32 pm'!"Change Set:		CompilerFromSM-mdDate:			8 March 2004Author:			Marcus DenkerThis cs loads the current Compiler* from SqueakMap"!"Postscript:"SMSqueakMap default	loadUpdates;	installPackageWithId: '72cffeb7-de86-4ded-be7a-563f167b0f5d' autoVersion: '1'!

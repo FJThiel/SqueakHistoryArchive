@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7125] on 11 June 2008 at 7:59:31 am'!!TransformationMorph methodsFor: 'testing' stamp: 'wiz 11/24/2006 00:09'!isStickysubmorphs isEmpty ifFalse: [ ^ 	submorphs first isSticky ] .	^false! !

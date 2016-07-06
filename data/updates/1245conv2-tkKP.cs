@@ -1,0 +1,1 @@
+'From Squeak 2.4c of May 10, 1999 on 11 June 1999 at 10:41:35 am'!!ChangeSet methodsFor: 'accessing' stamp: 'tk 6/8/1999 22:25'!structures	^structures! !!ChangeSet methodsFor: 'accessing' stamp: 'tk 6/8/1999 22:25'!superclasses	^superclasses! !

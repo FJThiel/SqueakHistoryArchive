@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7191] on 5 July 2008 at 5:47:08 pm'!!String methodsFor: 'converting' stamp: 'ar 6/3/2007 18:32'!utf8ToSqueak	"Convert the receiver from a UTF8-encoded string"	^self convertFromWithConverter: UTF8TextConverter new.! !

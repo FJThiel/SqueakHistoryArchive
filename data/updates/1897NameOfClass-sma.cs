@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 4 February 2000 [latest update: #1873] on 27 February 2000 at 10:47:08 pm'!"Change Set:		22NameOfClass-smaDate:			27 February 2000Author:			Stefan Matthias AustIt seems that somebody accidentally created a 'NameOfClass' class. Removed."!Smalltalk removeClassNamed: #NameOfClass!

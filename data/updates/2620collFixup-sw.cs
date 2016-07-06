@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 5 August 2000 [latest update: #2619] on 15 September 2000 at 10:24:27 am'!"Change Set:		collFixup-swDate:			15 September 2000Author:			Scott WallaceOne small fix"!!Player methodsFor: 'slot getters/setters' stamp: 'sw 9/15/2000 10:10'!getPlayerAtCursor	^ self getValueAtCursor! !

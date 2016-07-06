@@ -1,0 +1,1 @@
+!Parser methodsFor: 'error handling' stamp: 'ar 9/27/2005 19:19'!interactive	^requestor ~~ nil! !!Compiler methodsFor: 'private' stamp: 'ar 9/27/2005 19:21'!interactive 	"Answer whether there is a requestor of the compiler who should be 	informed that an error occurred."	^requestor ~~ nil! !

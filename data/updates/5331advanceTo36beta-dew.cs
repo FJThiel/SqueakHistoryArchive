@@ -1,0 +1,1 @@
+'From Squeak3.6alpha of ''17 March 2003'' [latest update: #5330] on 5 July 2003 at 1:40:02 am'!"Postscript:"SystemVersion current version: 'Squeak3.6beta'; date: '4 July 2003'.self inform: 'The version number for this image hasnow been advanced to Squeak3.6beta.'!

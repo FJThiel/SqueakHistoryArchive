@@ -1,0 +1,1 @@
+'From Squeak3.6alpha of ''17 March 2003'' [latest update: #5252] on 27 June 2003 at 1:11:35 am'!

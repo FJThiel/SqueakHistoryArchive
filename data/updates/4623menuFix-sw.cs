@@ -1,0 +1,1 @@
+'From Squeak3.2alpha of 3 October 2001 [latest update: #4622] on 18 December 2001 at 1:18:25 am'!"Change Set:		menuFixes-swDate:			18 December 2001Author:			Scott WallaceRepairs a flaw in update 4622 regarding SelectionMenu by removing one method"!SelectionMenu removeSelector: #startUpWithCaption:at:!

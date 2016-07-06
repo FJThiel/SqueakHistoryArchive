@@ -1,0 +1,1 @@
+'From Squeak3.7gamma of ''17 July 2004'' [latest update: #5978] on 31 August 2004 at 11:07:28 am'!"Change Set:		FixRadial-arDate:			31 August 2004Author:			Andreas RaabFix querying for radial property of fill style."!!GradientFillStyle methodsFor: 'accessing' stamp: 'ar 8/31/2004 11:06'!radial	^radial ifNil:[false]! !

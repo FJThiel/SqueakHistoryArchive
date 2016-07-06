@@ -1,0 +1,6 @@
+'From Squeak3.9alpha of 4 July 2005 [latest update: #7015] on 21 March 2006 at 3:59:06 pm'!
+
+Slider subclass: #ScrollBar	instanceVariableNames: 'menuButton upButton downButton pagingArea scrollDelta pageDelta interval menuSelector timeOfMouseDown timeOfLastScroll nextPageDirection currentScrollDelay '	classVariableNames: 'ArrowImagesCache BoxesImagesCache UpArrow UpArrow8Bit ArrowImagesCacheMonitor '	poolDictionaries: ''	category: 'Morphic-Windows'!!ScrollBar class methodsFor: 'class initialization' stamp: 'md 3/21/2006 15:55'!initializeImagesCache	"initialize the receiver's ImagesCache. 	 	normally this method is not evaluated more than in the class 	initializazion. "	" 	ScrollBar initializeImagesCache.	"	ArrowImagesCacheMonitor := Monitor new.	ArrowImagesCache := self createArrowImagesCache.	BoxesImagesCache := self createBoxImagesCache! !!ScrollBar class methodsFor: 'images' stamp: 'md 3/21/2006 15:55'!arrowOfDirection: aSymbol size: finalSizeInteger color: aColor 	"answer a form with an arrow based on the parameters"	ArrowImagesCacheMonitor critical: [		^ArrowImagesCache at: {aSymbol. finalSizeInteger. aColor}	].! !
+	
+	
+ScrollBar initialize.!

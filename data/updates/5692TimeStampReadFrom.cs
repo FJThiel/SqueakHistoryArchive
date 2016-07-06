@@ -1,0 +1,10 @@
+'From Squeak3.7alpha of ''11 September 2003'' [latest update: #5657] on 4 February 2004 at 9:31:51 pm'!TestCase subclass: #TimeStampTest	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'Tests-Kernel-Magnitudes'!!TimeStampTest commentStamp: '<historical>' prior: 0!A TestCase is a Command representing the future running of a test case. Create one with the class method #selector: aSymbol, passing the name of the method to be run when the test case runs.
+
+When you discover a new fixture, subclass TestCase, declare instance variables for the objects in the fixture, override #setUp to initialize the variables, and possibly override# tearDown to deallocate any external resources allocated in #setUp.
+
+When you are writing a test case method, send #assert: aBoolean when you want to check for an expected value. For example, you might say "self assert: socket isOpen" to test whether or not a socket is open at a point in a test.!!TimeStamp class methodsFor: '*monticello-instance creation' stamp: 'cbc 2/4/2004 21:30'!fromString: aString	"Answer a new instance for the value given by aString.	 TimeStamp fromString: '1-10-2000 11:55:00 am'. 	"	^self readFrom: (ReadStream on: aString).! !!TimeStamp class methodsFor: '*monticello-instance creation' stamp: 'cbc 2/4/2004 21:17'!readFrom: stream	| date time |	stream skipSeparators.	date _ Date readFrom: stream.	stream peek = $, ifTrue: [stream next].	stream skipSeparators.	time _ Time readFrom: stream.	^self 		date: date		time: time! !!TimeStampTest methodsFor: 'initialize-release' stamp: 'cbc 2/4/2004 21:18'!setUp
+	"I am the method in which your test is initialized. 
+If you have ressources to build, put them here."! !!TimeStampTest methodsFor: 'initialize-release' stamp: 'cbc 2/4/2004 21:18'!tearDown
+	"I am called whenever your test ends. 
+I am the place where you release the ressources"! !!TimeStampTest methodsFor: 'testing' stamp: 'cbc 2/4/2004 21:18'!testReadFromA1	|ts|	ts _ TimeStamp current.
+	self assert: (ts = (TimeStamp fromString: ts asString)).! !

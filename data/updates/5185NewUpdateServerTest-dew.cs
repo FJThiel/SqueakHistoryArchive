@@ -1,0 +1,1 @@
+'From Squeak3.6alpha of ''17 March 2003'' [latest update: #5184] on 30 April 2003 at 1:15:17 am'!"Change Set:		NewUpdateServerTest-dewDate:			30 April 2003Author:			Doug WayThis is an empty changeset to test publishing updates with the new list of servers."!

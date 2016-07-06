@@ -1,0 +1,1 @@
+'From Squeak3.1alpha of 28 February 2001 [latest update: #3987] on 6 May 2001 at 7:07:13 pm'!!FlashMorph methodsFor: 'drawing' stamp: 'ar 5/6/2001 19:03'!fullDrawOn: aCanvas	| myCanvas |	aCanvas isBalloonCanvas ifTrue:[^super fullDrawOn: aCanvas].	myCanvas _ aCanvas asBalloonCanvas.	myCanvas deferred: true.	super fullDrawOn: myCanvas.	myCanvas flush.! !

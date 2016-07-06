@@ -1,0 +1,1 @@
+'From Squeak3.4alpha of ''11 November 2002'' [latest update: #5125] on 23 November 2002 at 11:05:10 am'!"Change Set:		conChkFileListFixan update rushed inappropriately into the internal update stream and now rescinded (by being edited into a no-op) before it reaches the outside world ;-)"!

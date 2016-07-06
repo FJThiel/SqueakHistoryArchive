@@ -1,0 +1,1 @@
+'From Squeak 2.3 beta of Nov 25, 1998 on 15 January 1999 at 11:46:27 am'!!TranslucentColor methodsFor: 'conversions' stamp: 'di 1/15/1999 11:44'!alpha: alphaValue	alphaValue = 1.0 ifTrue:		[^ Color basicNew			setPrivateRed: self privateRed			green: self privateGreen			blue: self privateBlue].	^ super alpha: alphaValue! !

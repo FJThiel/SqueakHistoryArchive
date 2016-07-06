@@ -1,0 +1,1 @@
+'From Squeak3.6beta of ''4 July 2003'' [latest update: #5387] on 17 September 2003 at 4:05:03 pm'!!Dictionary methodsFor: 'accessing' stamp: 'dvf 9/17/2003 16:03'!associations	"Answer a Collection containing the receiver's associations."	| out |	out _ WriteStream on: (Array new: self size).	self associationsDo: [:value | out nextPut: value].	^ out contents! !

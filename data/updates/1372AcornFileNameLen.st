@@ -1,0 +1,1 @@
+'From Squeak 2.4c of May 10, 1999 on 20 July 1999 at 5:58:16 pm'!!AcornFileDirectory class methodsFor: 'platform specific' stamp: 'TPR 7/20/1999 17:52'!maxFileNameLength	^ 255! !

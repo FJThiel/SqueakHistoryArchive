@@ -1,0 +1,1 @@
+'From Squeak3.10beta of 22 July 2007 [latest update: #7130] on 24 July 2007 at 7:46:52 am'!"Improvements to building process"ReleaseBuilderFor3dot10 new loadTogether: (Array with: 'Installer-Core-edc.86.mcz') merge: false.ReleaseBuilderFor3dot10 new updatePackages: 'ReleaseBuilder-edc.31(30).mcd'!

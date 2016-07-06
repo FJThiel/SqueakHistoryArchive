@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 4 February 2000 [latest update: #2098] on 12 May 2000 at 10:41:14 am'!"Change Set:		051Asserts-smaDate:			12 May 2000Author:			Stefan Matthias Aust<your descriptive text goes here>"!!BlockContext methodsFor: 'exceptions' stamp: 'sma 5/11/2000 19:38'!assert	self assert: self! !

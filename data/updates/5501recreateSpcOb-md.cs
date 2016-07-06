@@ -1,0 +1,1 @@
+'From Squeak3.7alpha of ''11 September 2003'' [latest update: #5430] on 20 October 2003 at 5:28:22 pm'!"Change Set:		recreateSpcOb-mdDate:			20 October 2003Author:			Marcus DenkerThis changeset just calls Smalltalk recreateSpecialObjectsArray in thepostscript to make ObjectsAsMethods work."!Smalltalk recreateSpecialObjectsArray!

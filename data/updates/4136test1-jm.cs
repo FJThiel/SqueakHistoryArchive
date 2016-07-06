@@ -1,0 +1,1 @@
+'From Squeak3.1alpha of 28 February 2001 [latest update: #4124] on 4 June 2001 at 11:18:09 am'!"Change Set:		test1-jmDate:			4 June 2001Author:			John MaloneyTest update; no contents, just testing update mechanism."!

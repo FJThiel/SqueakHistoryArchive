@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 12 May 2000 [latest update: #2158] on 30 June 2000 at 1:19:28 pm'!!TAssignmentNode methodsFor: 'inlining' stamp: 'mn 6/30/2000 13:19'!bindVariableUsesIn: aDictionary	"Do NOT bind the variable on the left-hand-side of an assignment statement."	"was bindVariablesIn:"	expression _ expression bindVariableUsesIn: aDictionary.! !

@@ -1,0 +1,1 @@
+'From Squeak3.3alpha of 11 January 2002 [latest update: #4905] on 2 August 2002 at 8:20:36 pm'!"Postscript:Fix the version number which has a space in it by accident."SystemVersion current version: 'Squeak3.2'.PopUpMenu notify: 'Oops.Sorry, we had to patch the version number to remove a space.Please accept our apologies and ask once more for updates.'.!

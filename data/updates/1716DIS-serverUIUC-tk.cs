@@ -1,0 +1,1 @@
+'From Squeak2.6 of 11 October 1999 [latest update: #1707] on 12 December 1999 at 9:34:16 pm'!"Change Set:		DIS-serverUIUC-tkDate:			12 December 1999Author:			Ted KaehlerLog into a different server at UIUC for posting external updates.This is a null update externally."!

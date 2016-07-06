@@ -1,0 +1,1 @@
+'From Squeak3.6alpha of ''17 March 2003'' [latest update: #5179] on 15 April 2003 at 2:08:42 pm'!"Change Set:		TestRemovalFor36a-mdDate:			9 April 2003Author:			Marcus DenkerRemoves SUNit-Test MethodReferenceTest, which is already included in the BaseImage Tests Package"!Smalltalk removeClassNamed: #MethodReferenceTest!

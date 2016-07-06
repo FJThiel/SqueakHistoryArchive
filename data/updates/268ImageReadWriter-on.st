@@ -1,0 +1,1 @@
+'From Squeak 2.2beta of Sept 11, 1998 on 15 September 1998 at 11:42:11 am'!!ImageReadWriter methodsFor: 'private' stamp: 'di 9/15/1998 11:42'!on: aStream	(stream _ aStream) reset.	(stream respondsTo: #binary) ifTrue: [stream binary].	"Note that 'reset' makes a file be text.  Must do this after."! !

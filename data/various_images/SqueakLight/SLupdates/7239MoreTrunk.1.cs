@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7237] on 12 August 2009 at 9:38:12 am'!"Change Set:		7239MoreTrunkDate:			12 August 2009Author:			Edgar J. De CleeneContinue with the synch"ReleaseBuilderFor3dot11 new updatePackages: 'Graphics-ar.63(edc.43).mcd'.ReleaseBuilderFor3dot11 new updatePackages: 'MorphicExtras-ar.39(edc.33).mcd'!

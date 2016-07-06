@@ -1,0 +1,1 @@
+'From Squeak3.6 of ''6 October 2003'' [latest update: #5429] on 1 June 2004 at 11:53:37 am'!!Morph methodsFor: 'event handling' stamp: 'KTT 6/1/2004 11:41'!keyUp: anEvent	"Handle a key up event. The default response is to do nothing."! !

@@ -1,0 +1,1 @@
+'From Squeak3.1alpha of 28 February 2001 [latest update: #3999] on 9 May 2001 at 5:10:21 pm'!!WonderlandActor methodsFor: 'eToy-fake' stamp: 'ar 5/9/2001 16:34'!getGraphic	"Why does eToy system send #getGraphic instead of #graphic???"	^self graphic! !

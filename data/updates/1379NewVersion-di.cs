@@ -1,0 +1,1 @@
+'From Squeak 2.5 of August 6, 1999 on 6 August 1999 at 11:13:40 pm'!!SystemDictionary methodsFor: 'sources, change log' stamp: 'di 8/6/1999 23:10'!version	"Answer the version of this release."	^ 'Squeak 2.5 of August 6, 1999'! !

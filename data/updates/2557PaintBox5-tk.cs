@@ -1,0 +1,1 @@
+"Change Set:		PaintBox5-tk.csDate:			1 Sept 2000Author:			Ted KaehlerMake the Prototype PaintBox have its shapes palette in the right place.  It was detached from the PaintBox.""Postscript:"(PaintBoxMorph prototype) toggleStamps; toggleStamps.!

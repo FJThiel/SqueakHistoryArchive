@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7228] on 15 July 2009 at 5:32:02 pm'!!MCDiffyVersion methodsFor: 'as yet unclassified' stamp: 'edc 7/15/2009 17:07'!hasPostscript	^ false! !!MCDiffyVersion methodsFor: 'as yet unclassified' stamp: 'edc 7/15/2009 17:07'!hasPreamble^ false! !

@@ -1,0 +1,1 @@
+'From Squeak3.4 of 1 March 2003 [latest update: #5170] on 8 April 2003 at 9:24:16 am'!SystemDictionary removeSelector: #macroBenchmark1!SystemDictionary removeSelector: #macroBenchmark2!SystemDictionary removeSelector: #macroBenchmark3!SystemDictionary removeSelector: #macroBenchmarks!SystemDictionary removeSelector: #standardTime:!

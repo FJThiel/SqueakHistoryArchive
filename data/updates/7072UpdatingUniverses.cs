@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 30 March 2007 [latest update: #7071] on 30 March 2007 at 11:06:36 am'!"To follow this see http://bugs.squeak.org/view.php?id=6379"ReleaseBuilderFor3dot10 new updatePackages:'Universes-ls.21(19).mcd'.ChangeSet removeChangeSetsNamedSuchThat:		[:cs| cs name ~= ChangeSet current name].!

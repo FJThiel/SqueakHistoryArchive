@@ -1,0 +1,1 @@
+'From Squeak3.8alpha of ''17 July 2004'' [latest update: #6326] on 5 November 2004 at 5:46:35 pm'!"Change Set:		MailPngFix-kfrDate:			5 November 2004Author:			Karl RambergAttached png would not show. Fixed."!!MailMessage methodsFor: 'testing' stamp: 'kfr 11/5/2004 17:32'!containsViewableImage	^self body isJpeg | self body isGif | self body isPng! !

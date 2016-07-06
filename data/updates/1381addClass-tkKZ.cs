@@ -1,0 +1,1 @@
+'From Squeak 2.5 of August 6, 1999 on 10 August 1999 at 10:44:42 pm'!!ChangeSet methodsFor: 'class changes' stamp: 'tk 8/10/1999 22:43'!addClass: class 	"Include indication that a new class was created."	class wantsChangeSetLogging ifTrue:		[self atClass: class add: #new.		self atClass: class add: #change.		self addCoherency: class name]! !

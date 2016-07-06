@@ -1,0 +1,4 @@
+'From Squeak3.9alpha of 4 July 2005 [latest update: #6710] on 15 January 2006 at 6:20:10 pm'!"Change Set:		6712RecompileAllDate:			15 January 2006Author:			stephaneducasserecompile all the methods. Required by method annotation introduction"!
+
+!Encoder methodsFor: 'results' stamp: 'md 8/5/2005 16:58'!allLiterals	(literalStream isKindOf: WriteStream) ifTrue: [		self litIndex: nil.		self litIndex: (self associationFor: class).	].	^ literalStream contents! !
+"Postscript:Leave the line above, and replace the rest of this comment by a useful one.Executable statements should follow this comment, and shouldbe separated by periods, with no exclamation points (!!).Be sure to put any further comments in double-quotes, like this one."Compiler recompileAll.!

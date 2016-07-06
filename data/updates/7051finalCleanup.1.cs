@@ -1,0 +1,1 @@
+'From Squeak3.9alpha of 4 July 2005 [latest update: #7051] on 23 July 2006 at 7:02:43 pm'!SendCaches initializeAllInstances.MCFileBasedRepository flushAllCaches.MCDefinition clearInstances.Smalltalk garbageCollect.ScriptLoader new prepareReleaseImage.!

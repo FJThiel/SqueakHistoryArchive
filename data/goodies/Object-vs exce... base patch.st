@@ -1,0 +1,1 @@
+'From Squeak 1.2 of June 29, 1997 on 19 August 1997 at 7:34:44 pm'!!Object methodsFor: 'vs exceptions base patch' stamp: 'taj 8/19/97 19:31'!doesNotUnderstand: aMessage 	Error signal: aMessage printString! !!Object methodsFor: 'vs exceptions base patch' stamp: 'taj 8/19/97 19:32'!error: aString	Error signal: aString! !

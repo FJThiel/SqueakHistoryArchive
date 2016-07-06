@@ -1,0 +1,1 @@
+'From Squeak3.1alpha of 5 February 2001 [latest update: #3835] on 14 March 2001 at 3:58:45 pm'!"Change Set:		fixFtpExceptionDate:			14 March 2001Author:			Bob ArningGosh, if I'm going to resume an exception, it ought to resumable."!!FTPConnectionException methodsFor: 'as yet unclassified' stamp: 'RAA 3/14/2001 15:57'!isResumable	^true! !

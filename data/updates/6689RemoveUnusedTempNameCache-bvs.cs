@@ -1,0 +1,4 @@
+'From Squeak3.9alpha of ''2 November 2004'' [latest update: #6532] on 6 January 2005 at 9:59:19 am'!"Change Set:		RemoveUnusedTempNameCache-bvsDate:			6 January 2005Author:			Benjamin SchroederCompiledMethod keeps a cache of temporary names for a single CompiledMethod instance. The cache is set after compilation and during certain debugger operations. However, it is never read.Keeping the cache creates an extra reference to the most recently compiled method. This can be a problem in certain obscure situations, such as including the method in an image segment.This changeset removes the cache.
+
+md: just the postscript
+"!"Postscript:Remove TempNameCache from CompiledMethod. This can't be done by just modifying the class definition, since the system doesn't allow CompiledMethod to be recompiled."CompiledMethod removeClassVarName: 'TempNameCache'.!

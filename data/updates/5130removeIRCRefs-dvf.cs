@@ -1,0 +1,1 @@
+'From Squeak3.4alpha of ''11 November 2002'' [latest update: #5125] on 22 November 2002 at 2:19:05 pm'!TheWorldMenu removeSelector: #openIRC!

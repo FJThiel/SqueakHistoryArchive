@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 4 February 2000 [latest update: #2210] on 1 June 2000 at 1:05:31 pm'!"Change Set:		086MenuFixFix-smaDate:			28 May 2000Author:			Stefan Matthias AustA fix for change 2114."!!StringHolderView methodsFor: 'model access' stamp: 'sma 5/28/2000 23:25'!getMenu: shiftKeyState	^ nil! !

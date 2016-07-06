@@ -1,0 +1,1 @@
+'From Squeak3.7alpha of 11 September 2003 [latest update: #5707] on 24 February 2004 at 2:46:25 pm'!!SyntaxMorph methodsFor: 'layout' stamp: 'FBS 2/24/2004 14:44'!addNoiseString: aNoiseString	^self addNoiseString: aNoiseString emphasis: TextEmphasis normal emphasisCode.! !

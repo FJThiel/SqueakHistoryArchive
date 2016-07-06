@@ -1,0 +1,1 @@
+'From Squeak3.8alpha of ''17 July 2004'' [latest update: #6260] on 25 September 2004 at 5:15:14 pm'!"Change Set:		eToyFriendly-dgdDate:			25 September 2004Author:			Diego Gomez Deck"Preferences disable: #eToyFriendly.!

@@ -1,0 +1,1 @@
+'From Squeak 2.1 of June 30, 1998 on 30 July 1998 at 7:52:33 pm'!"Change Set:		bindingOfDate:			30 July 1998Author:			Lex SpoonMakes workspace variable bindings work in Morphic, by copying StringHolderController's bindingOf: in TextMorphEditor"!!TextMorphEditor methodsFor: 'binding' stamp: 'ls 7/24/1998 21:06'!bindingOf: aString	^model bindingOf: aString! !

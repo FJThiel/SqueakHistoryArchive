@@ -1,0 +1,1 @@
+'From Squeak 2.3 beta of Nov 25, 1998 on 5 January 1999 at 8:43:11 am'!!TransitionMorph methodsFor: 'drawing' stamp: 'di 1/5/1999 08:37'!areasRemainingToFill: aRectangle	"May be overridden by any subclasses with opaque regions"	^ aRectangle areasOutside: self bounds! !!TransparentColor methodsFor: 'queries' stamp: 'di 1/5/1999 08:28'!alpha	^ 0.0! !

@@ -1,0 +1,1 @@
+'From Squeak3.10.2beta of 5 June 2008 [latest update: #7175] on 5 June 2008 at 2:53:19 pm'!"Change Set:		7179AdvanceTo3dot10dot2Date:			5 June 2008Author:			Ken CauseyFinalize 3.10.2"!"Postscript:"SystemVersion newVersion: 'Squeak3.10.2'.SystemVersion current date: '5 June 2008'.self inform: 'You may now save this Version 3.10.2 image.'.!

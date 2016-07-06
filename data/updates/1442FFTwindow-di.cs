@@ -1,0 +1,1 @@
+'From Squeak 2.5 of August 6, 1999 on 15 September 1999 at 8:26:34 am'!Object subclass: #FFT	instanceVariableNames: 'nu n sinTable permTable realData imagData window '	classVariableNames: ''	poolDictionaries: ''	category: 'Music-Synthesis'!

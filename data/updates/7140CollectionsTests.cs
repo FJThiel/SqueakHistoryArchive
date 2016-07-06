@@ -1,0 +1,1 @@
+'From Squeak3.10beta of 22 July 2007 [latest update: #7139] on 8 August 2007 at 9:53:11 am'!"Reporter: Damien CassouSummary: 0006586: PositionableStream>>backUpTo: is not testedDescription: Attached mcz contains 3 tests for #backUpTo:Additional Information: "!ReleaseBuilderFor3dot10 new updatePackages: 'CollectionsTests-edc.72(71).mcd'!

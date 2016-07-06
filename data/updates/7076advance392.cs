@@ -1,0 +1,1 @@
+"Change Set:		advance392Date:			1 June 2008Author:			S. DucasseAdvance the version to 3.9.2. Subsequent updates will lead to version 3.9.2"!"Postscript:Advance the version number to 3.9.1a ."SystemVersion newVersion: 'Squeak3.9.2'.self inform: 'You may now save this Version 3.9.2  image.Subsequent updates will lead to 3.9.2.'.!

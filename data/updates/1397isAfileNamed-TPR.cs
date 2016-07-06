@@ -1,0 +1,1 @@
+'From Squeak 2.5 of August 6, 1999 on 26 August 1999 at 2:02:35 pm'!!FileStream class methodsFor: 'instance creation' stamp: 'TPR 8/26/1999 10:49'!isAFileNamed: fName	"return whether a file exists with the given name"	^self concreteStream isAFileNamed: (self fullName: fName)! !

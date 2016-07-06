@@ -1,0 +1,1 @@
+'From Squeak 2.3 of January 14, 1999 on 31 March 1999 at 9:11:07 pm'!!RestSound class methodsFor: 'instance creation' stamp: 'jm 3/31/1999 21:05'!dur: d	"Return a rest of the given duration."	^ self new setDur: d! !

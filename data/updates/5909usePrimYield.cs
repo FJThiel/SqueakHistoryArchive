@@ -1,0 +1,1 @@
+'From Squeak3.7beta of ''1 April 2004'' [latest update: #5878] on 28 April 2004 at 5:54:41 pm'!!ProcessorScheduler methodsFor: 'process state change' stamp: 'tpr 4/28/2004 17:53'!yield	"Give other Processes at the current priority a chance to run."	| semaphore |	<primitive: 167>	semaphore _ Semaphore new.	[semaphore signal] fork.	semaphore wait! !

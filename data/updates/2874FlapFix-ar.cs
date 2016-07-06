@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 13 June 2000 [latest update: #2923] on 30 October 2000 at 10:03:27 pm'!"Change Set:		FlapFix-arDate:			30 October 2000Author:			Andreas RaabFixes disembodied flap tabs."!!PasteUpMorph methodsFor: 'flaps' stamp: 'ar 10/30/2000 22:02'!bringFlapTabsToFront	(submorphs select:[:m| m isFlapOrTab]) do:[:m| self addMorphInLayer: m].! !

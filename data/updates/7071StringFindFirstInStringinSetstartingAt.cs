@@ -1,0 +1,1 @@
+'From Squeak3.10alpha.7069 of 12 March 2007 [latest update: #7069] on 16 March 2007 at 7:39:22 am'!"To follow this seehttp://bugs.impara.de/squeak/view.php?id=3574"ReleaseBuilderFor3dot10 new updatePackages:'Collections-edc.72(md.71).mcdCollectionsTests-edc.36(35).mcd'!

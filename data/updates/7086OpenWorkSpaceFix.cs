@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 30 March 2007 [latest update: #7085] on 12 April 2007 at 4:25:16 pm'!"To follow this seehttp://bugs.squeak.org/view.php?id= 4654"ReleaseBuilderFor3dot10 new updatePackages: 'ToolBuilder-Morphic-edc.21.mcz'!

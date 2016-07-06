@@ -1,0 +1,1 @@
+'From Squeak3.6alpha of ''17 March 2003'' [latest update: #5269] on 18 June 2003 at 1:25:40 pm'!"Change Set:		unregVmMakerDate:			18 June 2003Author:			Marcus DenkerThis changeset is empty. The postcript removes the VMMaker entry fromthe Worlmenu."!"Postscript:"TheWorldMenu unregisterOpenCommand: 'VMMaker'.!

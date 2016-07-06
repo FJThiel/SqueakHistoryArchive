@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 17 July 2000 [latest update: #3311] on 26 January 2001 at 2:31:22 pm'!"Change Set:		pvmGoofDate:			26 January 2001Author:			Bob ArningSince I deleted #borderColor, #borderWidth should go, too."!ProjectViewMorph removeSelector: #borderWidth!

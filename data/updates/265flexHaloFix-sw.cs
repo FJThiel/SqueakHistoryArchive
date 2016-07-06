@@ -1,0 +1,1 @@
+'From Squeak 2.2beta of Sept 11, 1998 on 14 September 1998 at 5:34:36 pm'!"Change Set:		flexHaloFix-swDate:			14 September 1998Author:			Scott WallaceFixs the bug that kept mouse-over halos from being put up on flexed morphs"!TransformMorph removeSelector: #wantsHalo!

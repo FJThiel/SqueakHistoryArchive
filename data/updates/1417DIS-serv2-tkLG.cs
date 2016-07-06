@@ -1,0 +1,1 @@
+'From Squeak 2.5 of August 6, 1999 on 3 September 1999 at 3:04:03 pm'!"Content local to Squeak Central."!

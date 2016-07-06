@@ -1,0 +1,1 @@
+'From Squeak3.10beta of 22 July 2007 [latest update: #7133] on 24 July 2007 at 9:30:36 am'!"Reporter: andreasSummary: 0006572: Form>>isAllWhite is brokenDescription: Form isAllWhite is broken and needs fixing.Additional Information: "!ReleaseBuilderFor3dot10 new updatePackages: 'Graphics-edc.41(40).mcdGraphicsTests-edc.11(10).mcd'!

@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 19 January 2000 [latest update: #2335] on 12 June 2000 at 9:35:55 pm'!"Change Set:		DoMacCFMTerminateDate:			12 June 2000Author:			johnmci@smalltalkconsulting.comThis changeSet intentionally left blank."!

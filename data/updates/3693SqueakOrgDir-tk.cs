@@ -1,0 +1,1 @@
+"The directory structure at Squeak.org has changed.  Modify our ServerDirectory object to reflect this.  	It is now OK to post updates."!(ServerDirectory serverNames includes: 'UpdatesAtSqueak.org') ifTrue: [	(ServerDirectory serverNamed: 'UpdatesAtSqueak.org')		directory: 'htdocs/untested/updates'].!Socket deadServer: 'www.squeaklet.com'. 	"Put Squeak.org first"!

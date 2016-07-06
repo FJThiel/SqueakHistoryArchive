@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 30 March 2007 [latest update: #7086] on 13 April 2007 at 3:26:07 pm'!"To follow this seehttp://bugs.squeak.org/view.php?id= 6483"ReleaseBuilderFor3dot10 new updatePackages: 'Tools-edc.79(78).mcd'!

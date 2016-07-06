@@ -1,0 +1,1 @@
+'From Squeak 2.3 of January 14, 1999 on 19 April 1999 at 2:53:14 pm'!"Change Set:		WindowDrag2-arDate:			19 April 1999Author:			Andreas RaabInitializes the preference for making it visible in the preferences editor (sorry, forgot this in the last change set)"Preferences setPreference: #allowLabelDragging toValue: false.Preferences initializeHelpMessages.!

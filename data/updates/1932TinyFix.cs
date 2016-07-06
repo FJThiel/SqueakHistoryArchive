@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 16 February 2000 [latest update: #1931] on 12 March 2000 at 9:16:19 pm'!"Change Set:		TinyFixDate:			12 March 2000Author:			Andreas RaabFixes a bounding box computation in B3DBox."!!B3DBox methodsFor: 'accessing' stamp: 'ar 3/12/2000 21:11'!boundingBox	^Rectangle origin: vertices first corner: (vertices at: 7)! !

@@ -1,0 +1,1 @@
+'From Squeak2.6 of 11 October 1999 [latest update: #1596] on 10 November 1999 at 8:13:35 pm'!!Morph methodsFor: 'change reporting' stamp: 'ar 11/10/1999 20:13'!invalidRect: damageRect	owner ifNotNil: [owner invalidRect: damageRect].	(self hasProperty:#wonderlandTexture) ifTrue:["If I am a wonderland texture"		self setProperty: #textureIsDirty toValue: true].! !

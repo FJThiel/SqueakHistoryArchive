@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 12 June 2000 [latest update: #3201] on 23 December 2000 at 8:51:28 am'!!Morph methodsFor: 'menus' stamp: 'di 12/21/2000 17:18'!setToAdhereToEdge: anEdge	anEdge ifNil: [^ self].	anEdge == #none ifTrue: [^ self removeProperty: #edgeToAdhereTo].	self setProperty: #edgeToAdhereTo toValue: anEdge.! !

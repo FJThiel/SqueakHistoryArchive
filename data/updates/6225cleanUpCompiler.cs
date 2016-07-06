@@ -1,0 +1,1 @@
+'From Squeak3.8alpha of ''17 July 2004'' [latest update: #6212] on 23 September 2004 at 10:49:55 am'!"Change Set:		cleanUpCompilerDate:			23 September 2004Author:			Marcus Denkerremoves Compiler*. will be back soon"SystemOrganization removeCategoriesMatching: 'Compiler-*'.!

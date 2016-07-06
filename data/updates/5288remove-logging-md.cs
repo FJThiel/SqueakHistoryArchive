@@ -1,0 +1,1 @@
+'From Squeak3.6alpha of ''17 March 2003'' [latest update: #5278] on 24 June 2003 at 4:28:43 pm'!"Change Set:		remove-logging-md2Date:			4 May 2003Author:			Marcus DenkerThis removes two methods from Object which are not called.flag:log:             not used.flag:streamlog:     empty method."!Object removeSelector: #flag:log:!Object removeSelector: #flag:streamLog:!

@@ -1,0 +1,1 @@
+'From Squeak3.2gamma of 15 January 2002 [latest update: #4889] on 26 June 2002 at 9:11:49 pm'!Smalltalk removeClassNamed: #MPEGImageMorph!Smalltalk removeClassNamed: #MPEGPlayer2!Smalltalk removeClassNamed: #MPEGPlayerMorph!Smalltalk removeClassNamed: #VolumeMorph!

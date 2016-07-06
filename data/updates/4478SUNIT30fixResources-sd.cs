@@ -1,0 +1,1 @@
+'From Squeak3.1beta of 18 October 2001 [latest update: #4411] on 31 October 2001 at 6:04:56 pm'!!TestResource methodsFor: 'Init / Release' stamp: 'sd 10/31/2001 18:04'!initialize	self setUp! !

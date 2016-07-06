@@ -1,0 +1,1 @@
+'From Squeak3.1alpha of 28 February 2001 [latest update: #4129] on 4 June 2001 at 5:30:34 pm'!'Do nothing. but stake out this update number'!

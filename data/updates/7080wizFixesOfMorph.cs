@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 30 March 2007 [latest update: #7079] on 6 April 2007 at 8:55:49 am'!"Collect changes of :http://bugs.squeak.org/view.php? = 5251http://bugs.squeak.org/view.php? = 5619http://bugs.squeak.org/view.php? = 5704http://bugs.squeak.org/view.php? = 5392"ReleaseBuilderFor3dot10 new updatePackages: 'Morphic-edc.116(sd.115).mcdTests-edc.21(20).mcd'!

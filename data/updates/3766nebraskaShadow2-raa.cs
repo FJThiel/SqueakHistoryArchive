@@ -1,0 +1,1 @@
+'From Squeak3.1alpha of 5 February 2001 [latest update: #3775] on 4 March 2001 at 8:19:05 am'!"Change Set:		nebraskaShadow2Date:			4 March 2001Author:			Bob Arningone more fix for drop shadows in Nebraska"!!RemoteCanvas methodsFor: 'drawing-support' stamp: 'RAA 3/4/2001 08:15'!shadowColor	^shadowColor! !

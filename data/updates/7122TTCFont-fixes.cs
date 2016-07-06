@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 13 July 2007 [latest update: #7121] on 19 July 2007 at 10:29:48 am'!"Change Set:		7122TTCFont-fixesDate:			19 July 2007Author:			Edgar J. De CleeneThis integrates the bug reports 6520 and 6524 "!ReleaseBuilderFor3dot10 new loadTogether: (Array with: 'Multilingual-edc.26.mcz') merge: false.!

@@ -1,0 +1,1 @@
+'From Squeak3.7alpha of 11 September 2003 [latest update: #5816] on 18 May 2004 at 5:52:44 am'!!PDA methodsFor: 'notes' stamp: 'HEG 5/18/2004 05:38'!notesMenu: aMenu	aMenu add: 'add new note' target: self selector: #addNote.	notesListIndex > 0 ifTrue:		[aMenu add: 'remove note' target: self selector: #removeNote].	^ aMenu! !

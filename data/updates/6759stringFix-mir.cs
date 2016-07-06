@@ -1,0 +1,1 @@
+'From Squeak3.8.2a of ''26 Oct 2007'' [latest update: #6747] on 19 November 2007 at 1:35:51 pm'!"Change Set:		stringFix-mirDate:			20 December 2007Author:			Michael Ruegermoved fixes of this set to 6750"!

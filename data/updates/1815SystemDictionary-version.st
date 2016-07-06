@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 12 January 2000 [latest update: #1811] on 4 February 2000 at 4:50:33 pm'!!SystemDictionary methodsFor: 'sources, change log' stamp: 'di 10/15/1999 14:48'!version	"Answer the version of this release."	^ EToySystem version , ' of ' , EToySystem versionDate! !

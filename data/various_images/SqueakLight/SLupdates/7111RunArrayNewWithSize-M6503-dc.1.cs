@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7077] on 10 June 2008 at 10:31:11 am'!!RunArray class methodsFor: 'instance creation' stamp: 'dc 5/24/2007 10:53'!new: aSize	^ self new: aSize withAll: nil! !

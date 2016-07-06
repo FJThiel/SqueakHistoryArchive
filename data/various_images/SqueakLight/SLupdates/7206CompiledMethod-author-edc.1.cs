@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7204] on 6 October 2008 at 10:00:52 am'!!CompiledMethod methodsFor: 'printing' stamp: 'edc 10/6/2008 09:54'!author self timeStamp isEmpty ifFalse: [^self timeStamp substrings first] ifTrue:[^'unknown']	! !

@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 12 June 2000 [latest update: #2605] on 11 September 2000 at 12:33:25 pm'!!PolygonMorph methodsFor: 'dashes' stamp: 'di 9/11/2000 12:32'!wantsSteps	super wantsSteps ifTrue: [^ true].	"For crawling ants effect of dashed line."	borderDashSpec ifNil: [^ false].	^ borderDashSpec size = 5 and: [(borderDashSpec at: 5) > 0]! !

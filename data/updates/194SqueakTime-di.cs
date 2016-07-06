@@ -1,0 +1,1 @@
+'From Squeak 2.1 of June 30, 1998 on 17 August 1998 at 10:17:06 pm'!!Form methodsFor: 'scaling, rotation' stamp: 'di 8/17/1998 22:17'!magnifyBy: scale 	"Answer a Form created as a scaling of the receiver.	Scale may be a Float, and may be greater or less than 1.0."	^ self magnify: self boundingBox by: scale			smoothing: (scale < 1 ifTrue: [2] ifFalse: [1])! !

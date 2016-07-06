@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7226] on 10 June 2009 at 7:26:17 am'!!Morph methodsFor: 'geometry' stamp: 'edc 7/10/2006 08:20'!shift: delta			self position: self position + delta! !

@@ -1,0 +1,1 @@
+'From Small-Land 3.8-5976-0266 of 2 September 2004 [latest update: #5976] on 3 September 2004 at 12:27:37 pm'!"Change Set:		LatinFixes-dgdDate:			2 September 2004Author:			Diego Gomez Deck"AbstractString initialize.!

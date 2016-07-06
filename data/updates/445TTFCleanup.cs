@@ -1,0 +1,1 @@
+'From Squeak 2.3 beta of Nov 25, 1998 on 28 November 1998 at 9:59:44 pm'!TTFontReader removeSelector: #displayKerningString:on:at:withSize:!TTFontReader removeSelector: #open!TTFontReader removeSelector: #display!TTFontReader removeSelector: #displayString:on:at:withSize:!TTFontReader class removeSelector: #exampleString:!

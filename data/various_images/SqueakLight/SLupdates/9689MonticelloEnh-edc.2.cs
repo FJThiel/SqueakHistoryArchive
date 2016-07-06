@@ -1,0 +1,1 @@
+'From Squeak3.11alpha of 13 February 2010 [latest update: #9699] on 27 August 2010 at 10:57:47 am'!!MCDependencySorter methodsFor: 'private' stamp: 'edc 7/11/2008 09:04'!removeRequirement: anObject	required  removeKey: anObject ifAbsent: [#()].! !

@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7077] on 10 June 2008 at 9:57:15 am'!!Morph methodsFor: 'geometry testing' stamp: 'nk 4/27/2003 16:16'!intersects: aRectangle	"Answer whether aRectangle, which is in World coordinates, intersects me."	^self fullBoundsInWorld intersects: aRectangle! !

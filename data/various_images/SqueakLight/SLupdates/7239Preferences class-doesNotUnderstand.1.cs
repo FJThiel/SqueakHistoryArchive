@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7243] on 30 September 2009 at 10:25:02 am'!!Preferences class methodsFor: 'get/set' stamp: 'sw 11/11/1998 11:40'!doesNotUnderstand: aMessage	"Look up the message selector as a flag."	aMessage arguments size > 0 ifTrue: [^ super doesNotUnderstand: aMessage].	^ self valueOfFlag: aMessage selector! !

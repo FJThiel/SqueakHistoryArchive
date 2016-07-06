@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 13 June 2000 [latest update: #2893] on 25 October 2000 at 9:23:53 pm'!"Postscript:Fix those flaps"Preferences okToReinitializeFlaps ifTrue:[Utilities reinstateDefaultFlaps].!

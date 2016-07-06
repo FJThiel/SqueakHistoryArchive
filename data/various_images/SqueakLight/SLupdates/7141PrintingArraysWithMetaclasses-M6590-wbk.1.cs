@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7125] on 11 June 2008 at 8:03 am'!!Metaclass methodsFor: 'testing' stamp: 'wbk 7/26/2007 12:41'!isSelfEvaluating	^ true! !

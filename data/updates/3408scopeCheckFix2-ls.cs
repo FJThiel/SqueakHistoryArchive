@@ -1,0 +1,1 @@
+"Change Set:		scopeCheckFix2-lsDate:			19 January 2001Author:			Lex SpoonFix the all versions of encodeVariable* to use the same code; before, there were two parallel copies of nearly identical code."!!Encoder methodsFor: 'encoding' stamp: 'ls 1/19/2001 12:59'!encodeVariable: name ifUnknown: action	^self encodeVariable: name sourceRange: nil ifUnknown: action! !

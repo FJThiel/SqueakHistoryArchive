@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 12 June 2000 [latest update: #2602] on 11 September 2000 at 1:10:17 pm'!!Utilities class methodsFor: 'identification' stamp: 'di 9/11/2000 13:10'!setAuthorInitials: aString	AuthorInitials _ aString.	"Case of being reset due to, eg, copy of image."	aString isEmpty ifTrue: [AuthorName _ nil]! !

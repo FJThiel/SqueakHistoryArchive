@@ -1,0 +1,1 @@
+'From Squeak3.7alpha of ''11 September 2003'' [latest update: #5595] on 12 December 2003 at 2:35:31 pm'!!Collection methodsFor: 'copying' stamp: 'al 12/12/2003 14:31'!, aCollection	^self copy addAll: aCollection; yourself! !

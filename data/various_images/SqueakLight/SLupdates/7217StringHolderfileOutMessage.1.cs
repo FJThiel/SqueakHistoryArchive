@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7216] on 26 January 2009 at 7:40:14 am'!!StringHolder methodsFor: '*Tools' stamp: 'edc 1/26/2009 07:35'!fileOutMessage	"Put a description of the selected message on a file"	self selectedMessageName		ifNotNil: [Cursor write				showWhile: [self selectedClassOrMetaClass fileOutMethod: self selectedMessageName ]]! !

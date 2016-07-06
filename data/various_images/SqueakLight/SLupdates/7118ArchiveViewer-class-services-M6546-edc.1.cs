@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7113] on 10 June 2008 at 11:20:56 am'!!ArchiveViewer class methodsFor: 'fileIn/Out' stamp: 'edc 6/26/2007 07:09'!services		^ Array 		with: self serviceAddToNewZip		with: self serviceOpenInZipViewer										! !

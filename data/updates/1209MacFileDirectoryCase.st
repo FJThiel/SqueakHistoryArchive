@@ -1,0 +1,1 @@
+'From Squeak 2.4c of May 10, 1999 on 11 May 1999 at 8:59:43 am'!!MacFileDirectory class methodsFor: 'platform specific' stamp: 'di 5/11/1999 08:53'!isCaseSensitive	"Mac OS ignores the case of file names"	^ false! !

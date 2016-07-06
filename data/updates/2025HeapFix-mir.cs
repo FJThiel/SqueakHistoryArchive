@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 4 February 2000 [latest update: #2005] on 22 April 2000 at 7:32:12 pm'!"Change Set:		1043HeapFix-mirDate:			22 March 2000Author:			Michael RŸgerfixes a bug when enumerating Heaps."!!Heap methodsFor: 'private' stamp: 'sma 4/22/2000 19:30'!species	^ Array! !

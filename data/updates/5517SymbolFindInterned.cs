@@ -1,0 +1,1 @@
+'From Squeak3.6beta of ''4 July 2003'' [latest update: #5387] on 17 September 2003 at 4:06:04 pm'!!Symbol class methodsFor: 'access' stamp: 'dvf 10/17/2003 16:00'!findInterned: aString	self hasInterned: aString ifTrue: [:symbol | ^symbol].	^nil.! !

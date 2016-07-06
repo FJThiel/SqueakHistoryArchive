@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 13 June 2000 [latest update: #2447] on 26 July 2000 at 4:54:15 pm'!!Behavior methodsFor: 'accessing' stamp: 'rca 7/26/2000 16:53'!name	"Answer a String that is the name of the receiver."	^'a subclass of ', superclass name! !

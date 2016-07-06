@@ -1,0 +1,1 @@
+'From Squeak3.7alpha of 11 September 2003 [latest update: #5707] on 16 February 2004 at 6:59:32 pm'!"Change Set:		SUnitFromSM-mdDate:			16 February 2004Author:			Marcus DenkerThis cs loads the current SUnit from SqueakMap"!"Postscript:"SMSqueakMap default	loadUpdates;	installPackageWithId: '26bea8bf-733f-4715-b188-fa6d848984ad' autoVersion: '1'!

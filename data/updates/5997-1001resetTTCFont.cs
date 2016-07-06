@@ -1,0 +1,1 @@
+'From Squeak3.7-m17n of 30 June 2004 [latest update: #0] on 30 June 2004 at 4:09:54 pm'!"Change Set:		resetTTCFontDate:			30 June 2004Author:			Yoshiki Ohshimano-op reset for TTCFont for compatibility."!!TTCFont methodsFor: 'caching' stamp: 'yo 6/30/2004 14:49'!reset! !

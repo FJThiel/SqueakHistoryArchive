@@ -1,0 +1,19 @@
+'From Squeak3.8alpha of ''17 July 2004'' [latest update: #6319] on 14 October 2004 at 5:08:03 pm'!"Change Set:		BlockClosureUpdates-mdDate:			14 October 2004Author:			Marcus DenkerCopies some newer additions from BlockContext to BlockClosure:#bench, #doWhileFalse, #doWhileTrue, #durationToRun, #forkAt:named:,#forkNamed: #valueWithPossibleArgument:"!!BlockClosure methodsFor: 'evaluating' stamp: 'md 10/14/2004 17:02'!bench	"See how many times I can value in 5 seconds.  I'll answer a meaningful description."	| startTime endTime count |	count _ 0.	endTime _ Time millisecondClockValue + 5000.	startTime _ Time millisecondClockValue.	[ Time millisecondClockValue > endTime ] whileFalse: [ self value.  count _ count + 1 ].	endTime _ Time millisecondClockValue.	^count = 1		ifTrue: [ ((endTime - startTime) // 1000) printString, ' seconds.' ]		ifFalse:			[ ((count * 1000) / (endTime - startTime)) asFloat printString, ' per second.' ]! !!BlockClosure methodsFor: 'evaluating' stamp: 'md 10/14/2004 17:03'!durationToRun
+	"Answer the duration taken to execute this block."
+
+	^ Duration milliSeconds: self timeToRun
+
+! !!BlockClosure methodsFor: 'evaluating' stamp: 'md 10/14/2004 17:03'!valueWithPossibleArgument: anArg      "Evaluate the block represented by the receiver.      If the block requires one argument, use anArg, if it requires more than one,     fill up the rest with nils."	self numArgs = 0 ifTrue: [^self value].	self numArgs = 1 ifTrue: [^self value: anArg].	self numArgs  > 1 ifTrue: [^self valueWithArguments: {anArg}, (Array new: self numArgs  - 1)]! !!BlockClosure methodsFor: 'controlling' stamp: 'md 10/14/2004 17:04'!doWhileFalse: conditionBlock	"Evaluate the receiver once, then again as long the value of conditionBlock is false." 	| result |	[result _ self value.	conditionBlock value] whileFalse.	^ result! !!BlockClosure methodsFor: 'controlling' stamp: 'md 10/14/2004 17:04'!doWhileTrue: conditionBlock	"Evaluate the receiver once, then again as long the value of conditionBlock is true." 	| result |	[result _ self value.	conditionBlock value] whileTrue.	^ result! !!BlockClosure methodsFor: 'scheduling' stamp: 'md 10/14/2004 17:04'!forkAt: priority named: name
+	"Create and schedule a Process running the code in the receiver at the
+	given priority and having the given name. Answer the newly created 
+	process."
+
+	| forkedProcess |
+	forkedProcess := self newProcess.
+	forkedProcess priority: priority.
+	forkedProcess name: name.
+	^ forkedProcess resume! !!BlockClosure methodsFor: 'scheduling' stamp: 'md 10/14/2004 17:05'!forkNamed: aString
+	"Create and schedule a Process running the code in the receiver and
+	having the given name."
+
+	^ self newProcess name: aString; resume! !!BlockClosure reorganize!('initializing' #env: #method:)('private' #copyForSaving #fixTemps #reentrant #valueError #valueUnpreemptively #veryDeepInner:)('evaluating' #bench #durationToRun #ifError: #timeToRun #value #value: #value:value: #value:value:value: #value:value:value:value: #valueWithArguments: #valueWithPossibleArgs: #valueWithPossibleArgument:)('accessing' #env #hasLiteralSuchThat: #hasLiteralThorough: #hasMethodReturn #isBlock #method #numArgs)('controlling' #doWhileFalse: #doWhileTrue: #repeat #repeatWithGCIf: #whileFalse #whileFalse: #whileTrue #whileTrue:)('exceptions' #assert #ensure: #ifCurtailed: #on:do: #onDNU:do: #valueUninterruptably)('scheduling' #asContext #callCC #fork #forkAndWait #forkAt: #forkAt:named: #forkNamed: #newProcess #simulate)('printing' #printOn:)('*sunit-preload' #sunitEnsure: #sunitOn:do:)('comparing' #= #hash)!

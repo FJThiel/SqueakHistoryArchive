@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 30 March 2007 [latest update: #7120] on 28 June 2007 at 6:27:23 am'!"Minor change for not having red test with Pavel changes"ReleaseBuilderFor3dot10 new updatePackages: 'SystemChangeNotification-Tests-edc.9.mcz'!

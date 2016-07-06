@@ -1,0 +1,1 @@
+'From Squeakland 3.8.5976 of 25 August 2004 [latest update: #308] on 3 September 2004 at 3:53:08 pm'!"Change Set:		SpuriousModelMenuFix-nkDate:			3 September 2004Author:			Ned KonzEliminates a spurious menu from the Esc key when editing a bare TextMorph."!TextMorph removeSelector: #editView!

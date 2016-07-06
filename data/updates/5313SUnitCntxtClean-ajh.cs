@@ -1,0 +1,1 @@
+!TestFailure methodsFor: 'Camp Smalltalk' stamp: 'ajh 1/24/2003 19:23'!defaultAction	Processor activeProcess		debug: self signalerContext		title: self description! !!TestFailure methodsFor: 'Camp Smalltalk' stamp: 'ajh 2/1/2003 00:58'!isResumable		^ false! !

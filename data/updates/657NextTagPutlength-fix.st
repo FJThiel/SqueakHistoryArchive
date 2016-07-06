@@ -1,0 +1,1 @@
+'From Squeak 2.3 of January 14, 1999 on 9 February 1999 at 3:17:23 pm'!!FlashFileStream methodsFor: 'writing data' stamp: 'di 2/9/1999 15:16'!nextTagPut: tag length: length	"Write the next tag."	length >= 16r3F ifTrue:[		self nextWordPut: (tag bitShift: 6) + 16r3F.		self nextULongPut: length.	] ifFalse:[		self nextWordPut: (tag bitShift: 6) + length.	].! !

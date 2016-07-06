@@ -1,0 +1,1 @@
+'From Squeak3.8gamma of ''24 November 2004'' [latest update: #6590] on 28 February 2005 at 7:03:34 am'!"Change Set:		removeDefunctGlyphInfoCallsDate:			28 February 2005Author:			Yoshiki OhshimaRemove two old methods."!StrikeFontSet removeSelector: #displayString:on:from:to:at:kern:from:!StrikeFont removeSelector: #displayMultiString:on:from:to:at:kern:!

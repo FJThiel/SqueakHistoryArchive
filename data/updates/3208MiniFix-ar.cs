@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 13 June 2000 [latest update: #3269] on 16 January 2001 at 5:07:03 pm'!!Morph methodsFor: 'printing' stamp: 'ar 1/16/2001 17:06'!clipPostscript	^Clipboard clipboardText: self asPostscript.! !

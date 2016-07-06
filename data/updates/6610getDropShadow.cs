@@ -1,0 +1,1 @@
+'From Squeak3.8-Nihongo of 2 March 2005 [latest update: #24] on 12 March 2005 at 2:52:26 pm'!"Change Set:		getDropShadowDate:			12 March 2005Author:			Yoshiki Ohshima<your descriptive text goes here>"!!Player methodsFor: 'slot getters/setters' stamp: 'yo 3/12/2005 14:43'!getDropShadow	"Getter for costume's hasDropShadow"	^ costume renderedMorph hasDropShadow! !

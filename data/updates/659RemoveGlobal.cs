@@ -1,0 +1,1 @@
+'From Squeak 2.3 of January 14, 1999 on 10 February 1999 at 8:38:25 am'!"Postscript:Remove an obsolete global."Smalltalk removeKey: #TranslatorOpcodeEncodings!

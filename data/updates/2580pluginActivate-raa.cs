@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 17 July 2000 [latest update: #2579] on 8 September 2000 at 9:34:07 pm'!"Change Set:		pluginActivateDate:			8 September 2000Author:			Bob Arning- I forgot one little bit to make the image suitable for browser pluginand that is:--->"		PluginLauncher activate!

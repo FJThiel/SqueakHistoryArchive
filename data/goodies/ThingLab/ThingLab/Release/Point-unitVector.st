@@ -1,0 +1,1 @@
+'From Squeak 2.3 of January 14, 1999 on 29 January 1999 at 1:27:40 am'!!Point methodsFor: 'point functions' stamp: 'RvL 1/29/1999 01:26'!unitVector	"Answer a Point representing the unit vector rotated 90 deg clockwise."	| n |	n _ x @ y.	^n / (n x * n x + (n y * n y)) sqrt! !

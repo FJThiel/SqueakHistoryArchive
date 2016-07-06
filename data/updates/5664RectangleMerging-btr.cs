@@ -1,0 +1,4 @@
+'From Squeak3.7alpha of ''11 September 2003'' [latest update: #5657] on 21 January 2004 at 9:51:22 pm'!"Change Set:		Rectangle-mergingDate:			14 February 2003Author:			Brian T Rice <water@tunes.org>			
+
+md: just reposting as gzip-compressed mime attachement...
+I modified Rectangle class>>merging: to only allocate a new point once all the coordinates have been collected, to correct some GC issues reported by Eddie Cottingim."!!Rectangle class methodsFor: 'instance creation' stamp: 'btr 2/14/2003 16:29'!merging: listOfRects 	"A number of callers of merge: should use this method."	| minX minY maxX maxY |	listOfRects		do: [:r | minX				ifNil: [minX _ r topLeft x. minY _ r topLeft y.					maxX _ r bottomRight x. maxY _ r bottomRight y]				ifNotNil: [minX _ minX min: r topLeft x. minY _ minY min: r topLeft y.					maxX _ maxX max: r bottomRight x. maxY _ maxY max: r bottomRight y]].	^ minX@minY corner: maxX@maxY! !

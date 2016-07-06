@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 30 March 2007 [latest update: #7080] on 6 April 2007 at 10:40:14 am'!"To follow this seehttp://bugs.squeak.org/view.php?id= 4719"ReleaseBuilderFor3dot10 new updatePackages: 'Morphic-edc.120(119).mcd'!

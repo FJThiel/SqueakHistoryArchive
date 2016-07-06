@@ -1,0 +1,1 @@
+'From Squeak3.3alpha of 30 January 2002 [latest update: #4738] on 10 February 2002 at 9:45:22 pm'!!Module methodsFor: 'private' stamp: 'hg 2/10/2002 13:11'!privateDefinedNames	^definedNames ifNil: [Dictionary new]! !!Module methodsFor: 'private' stamp: 'hg 2/10/2002 13:11'!privateExportedNames	^exportedNames ifNil: [Dictionary new]! !

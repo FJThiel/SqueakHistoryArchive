@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7235] on 11 August 2009 at 11:02:42 am'!!ByteString methodsFor: 'converting' stamp: 'edc 11/19/2007 10:49'!asJoliet|badChars |badChars := #( $: $< $> $| $/ $\ $? $* $") asSet.^ self copyWithoutAll: badChars! !

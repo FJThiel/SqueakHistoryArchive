@@ -1,0 +1,1 @@
+'From Squeak3.7beta of ''1 April 2004'' [latest update: #5905] on 29 April 2004 at 7:33:26 am'!"Change Set:		PseudoClassAllCallsOnFix-nkDate:			29 April 2004Author:			Ned KonzFixes browsing of class references from a code-file browser."!!PseudoClass methodsFor: 'accessing' stamp: 'nk 4/29/2004 06:59'!allCallsOn	^ (self realClass ifNil: [ ^#() ]) allCallsOn! !

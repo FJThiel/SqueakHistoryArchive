@@ -1,0 +1,1 @@
+'From Squeak 2.2 of Sept 23, 1998 on 25 October 1998 at 4:16:15 pm'!!InterpreterProxy methodsFor: 'object access' stamp: 'ar 10/25/1998 16:16'!storeInteger: index ofObject: oop withValue: integer	(self isIntegerValue: integer) 		ifTrue:[^self storePointer: index ofObject: oop withValue: integer]		ifFalse:[^self primitiveFail]! !

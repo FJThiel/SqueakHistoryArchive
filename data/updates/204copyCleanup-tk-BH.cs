@@ -1,0 +1,1 @@
+'From Squeak 2.1 of June 30, 1998 on 21 August 1998 at 8:26:35 am'!SmartRefStream removeSelector: #veryDeepClassVars:!SmartRefStream removeSelector: #veryDeepCopy:!SmartRefStream removeSelector: #veryDeepRectify:!Smalltalk removeClassNamed: #DeepCopyStream!

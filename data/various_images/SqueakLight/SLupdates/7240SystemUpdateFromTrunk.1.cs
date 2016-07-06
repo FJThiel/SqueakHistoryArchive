@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7239] on 12 August 2009 at 11:08:47 am'!"Change Set:		7240SystemUpdateFromTrunkDate:			12 August 2009Author:			Edgar J. De Cleene<your descriptive text goes here>"ReleaseBuilderFor3dot11 new updatePackages: 'System-jmv.121(edc.106).mcd'.!

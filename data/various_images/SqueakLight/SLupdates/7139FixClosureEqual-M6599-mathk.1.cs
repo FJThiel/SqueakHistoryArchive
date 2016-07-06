@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7125] on 11 June 2008 at 8:00:46 am'!!BlockClosure methodsFor: 'comparing' stamp: 'ms 8/8/2007 11:49'!= other	self class == other class ifFalse: [^ false].	self env = other env ifFalse: [^ false].	self method == other method ifTrue: [^true].	^ self method = other method! !

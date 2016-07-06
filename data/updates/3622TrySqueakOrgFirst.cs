@@ -1,0 +1,1 @@
+'From Squeak3.1alpha of 4 February 2001 [latest update: #3620] on 16 February 2001 at 4:21:07 pm'!"Postscript:Put Michael's server at the end of the list so that it will see less traffic.Make Squeak.org and UIUC take the major traffic."Socket deadServer: 'www.squeaklet.com'.!

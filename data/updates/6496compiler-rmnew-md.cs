@@ -1,0 +1,1 @@
+'From Squeak3.9alpha of ''2 November 2004'' [latest update: #6485] on 27 November 2004 at 11:48:28 am'!"Change Set:		compiler-rmnew-mdDate:			27 November 2004Author:			Marcus Denkerremoves two unneded class sides news"!RBReadBeforeWrittenTester class removeSelector: #new!RBParseTreeRule class removeSelector: #new!

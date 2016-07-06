@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 12 June 2000 [latest update: #3201] on 10 January 2001 at 12:03:19 pm'!!ChangeSet class methodsFor: 'defaults' stamp: 'di 1/10/2001 12:03'!defaultName	| namesInUse try |	namesInUse _ ChangeSorter gatherChangeSets collect: [:each | each name].	1 to: 999999 do:		[:i | try _ 'Unnamed' , i printString.		(namesInUse includes: try) ifFalse: [^ try]]! !

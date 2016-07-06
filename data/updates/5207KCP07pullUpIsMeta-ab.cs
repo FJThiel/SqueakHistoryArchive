@@ -1,0 +1,1 @@
+'From Squeak3.4 of 1 March 2003 [latest update: #5170] on 12 March 2003 at 5:47:32 pm'!"Change Set:		KCP-0007-pullUpIsMetaDate:			12 March 2003Author:			alexandre bergelPull up the method isMeta from the class ClassDescription to the class Behavior"!!Behavior methodsFor: 'testing' stamp: 'ab 3/12/2003 17:44'!isMeta	^ false! !ClassDescription removeSelector: #isMeta!

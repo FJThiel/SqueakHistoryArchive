@@ -1,0 +1,1 @@
+'From Squeak 2.5 of August 6, 1999 on 27 September 1999 at 9:05:44 pm'!Applescript class removeSelector: #new!

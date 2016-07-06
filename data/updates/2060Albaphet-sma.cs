@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 4 February 2000 [latest update: #2052] on 28 April 2000 at 6:54:30 pm'!"Change Set:		012Albaphet-smaDate:			28 April 2000Author:			Stefan Matthias AustBob noticed a sequence error in this method"!!Character class methodsFor: 'constants' stamp: 'sma 4/28/2000 18:51'!alphabet	"($a to: $z) as: String"	^ 'abcdefghijklmnopqrstuvwxyz'! !

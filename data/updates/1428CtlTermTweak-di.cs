@@ -1,0 +1,1 @@
+'From Squeak 2.5 of August 6, 1999 on 8 September 1999 at 12:44:09 am'!"Change Set:		CtlTermTweakDate:			8 September 1999Author:			Dan IngallsRemoves an override of #dispatchOnEnterWith: that lacked proper control termination."!StringHolderController removeSelector: #dispatchOnEnterWith:!

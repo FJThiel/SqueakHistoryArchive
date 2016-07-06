@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 30 March 2007 [latest update: #7117] on 26 June 2007 at 7:55:48 am'!ReleaseBuilderFor3dot10 new loadTogether: #('Tools-edc.85.mcz' ) merge: false.!

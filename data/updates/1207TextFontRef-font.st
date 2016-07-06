@@ -1,0 +1,1 @@
+'From Squeak 2.4c of May 10, 1999 on 10 May 1999 at 11:48:28 pm'!!TextFontReference methodsFor: 'as yet unclassified' stamp: 'di 5/10/1999 23:47'!font	^ font! !

@@ -1,0 +1,2 @@
+'From Squeak3.6gamma of ''11 September 2003'' [latest update: #5420] on 14 September 2003 at 8:57:55 pm'!"Change Set:		TextMorphFix-vjDate:			14 September 2003Author:			Vladimir Janousek
+The 'Change style' halo changes font instead of style because TextMorph>>chooseStyle does the same as #chooseFont. This fixes the problem."!!TextMorph methodsFor: 'editing' stamp: 'vj 9/14/2003 20:53'!chooseStyle	self editor changeStyle.	self updateFromParagraph.! !

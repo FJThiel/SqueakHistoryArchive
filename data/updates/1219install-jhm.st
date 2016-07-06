@@ -1,0 +1,1 @@
+'From Squeak 2.4c of May 10, 1999 on 27 May 1999 at 11:20:31 am'!!WorldMorph methodsFor: 'install / exit' stamp: 'ar 4/2/1999 12:19'!install	self viewBox: Display boundingBox.	hands do: [:h | h initForEvents].	self installFlaps.	SystemWindow noteTopWindowIn: self.	self displayWorldSafely.! !

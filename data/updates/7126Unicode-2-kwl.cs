@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 13 July 2007 [latest update: #7124] on 20 July 2007 at 6:44:49 am'!"To follow this seehttp://bugs.squeak.org/view.php?id=6336 "ReleaseBuilderFor3dot10 new loadTogether: (Array with: 'Multilingual-edc.28.mcz') merge: false.!

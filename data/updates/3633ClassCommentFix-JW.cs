@@ -1,0 +1,1 @@
+'From Squeak3.0 of 4 February 2001 [latest update: #3512] on 15 February 2001 at 8:36:34 am'!!ClassOrganizer methodsFor: 'accessing' stamp: 'JW 2/15/2001 07:40'!classComment	globalComment		ifNil: [^ ''].	^ globalComment text ifNil: ['']! !

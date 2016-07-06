@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7125] on 11 June 2008 at 7:55:36 am'!!Form methodsFor: 'testing' stamp: 'ar 7/21/2007 21:37'!isAllWhite	"Answer whether all bits in the receiver are white"	| word |	self unhibernate.	word := Color white pixelWordForDepth: self depth.	1 to: bits size do: [:i | (bits at: i) = word ifFalse: [^ false]].	^ true! !

@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7228] on 10 July 2009 at 2:13:13 pm'!!PackageInfo methodsFor: 'preamble/postscript' stamp: 'edc 7/10/2009 10:57'!hasPreamble	"Answer the value of hasPreamble"	^ preamble notNil! !

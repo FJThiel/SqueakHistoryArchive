@@ -1,0 +1,1 @@
+'From Squeak 2.3 of January 14, 1999 on 30 July 1999 at 12:52:38 pm'!!InterpreterPlugin class methodsFor: 'accessing' stamp: 'TPR 6/7/1999 15:54'!moduleName	^self name asString! !

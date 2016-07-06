@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 30 March 2007 [latest update: #7091] on 22 April 2007 at 10:18:21 am'!"To follow this see http://bugs.squeak.org/view.php?id= 5309"ReleaseBuilderFor3dot10 new loadPackages: 'Multilingual-edc.22(sd.21).mcdTests-edc.23(22).mcd'!

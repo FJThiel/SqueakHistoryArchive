@@ -1,0 +1,1 @@
+!Debugger methodsFor: 'context stack menu' stamp: 'nk 2/6/2001 19:34'!where	"Select the expression whose evaluation was interrupted."	selectingPC _ true.	self contextStackIndex: contextStackIndex oldContextWas: self selectedContext! !

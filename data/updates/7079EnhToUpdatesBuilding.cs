@@ -1,0 +1,1 @@
+'From Squeak3.10alpha of 30 March 2007 [latest update: #7077] on 6 April 2007 at 6:40:52 am'!"Improvements for easier the update building processSee comment in ReleaseBuilderFor3dot10 class"ReleaseBuilderFor3dot10 new updatePackages: 'Installer-Core-edc.83.mcz'!

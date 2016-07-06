@@ -1,0 +1,1 @@
+'From Squeak3.9alpha of 4 July 2005 [latest update: #6676] on 9 July 2005 at 11:26:41 pm'!"Change Set:		6677FlushMCCaches-dewDate:			9 July 2005Author:			Doug WayFlush the Monticello caches after installing all of the packages in the previous update.  (Otherwise, the saved image doubles in size.)"	MCFileBasedRepository flushAllCaches.	Smalltalk garbageCollect.!

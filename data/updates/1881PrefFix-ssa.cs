@@ -1,0 +1,1 @@
+'From Squeak2.8alpha of 4 February 2000 [latest update: #1852] on 12 February 2000 at 7:28:15 pm'!"Change Set:		06PrefFix-ssaDate:			9 February 2000Author:			Sam S. AdamsSpelling error in preferences fixed."!!Preferences class methodsFor: 'misc' stamp: 'ssa 2/9/2000 11:01'!toggleSoundEnabling     self togglePreference: #soundsEnabled! !

@@ -1,0 +1,1 @@
+'From SqueakLight|II of 31 May 2008 [latest update: #7214] on 5 December 2008 at 5:54:11 pm'!!UGlobalInstaller class methodsFor: 'accessing' stamp: 'edc 12/5/2008 17:35'!unwantedPackages	unwantedPackages		ifNil: [self unwantedPackages: Set new].		^unwantedPackages! !

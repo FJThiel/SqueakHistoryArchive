@@ -1,0 +1,1 @@
+'From Squeak2.9alpha of 12 June 2000 [latest update: #2602] on 11 September 2000 at 11:43:57 am'!!PolygonMorph methodsFor: 'dashes' stamp: 'di 9/11/2000 11:43'!step	borderDashSpec ifNil: [^ self].	"Only for dashed lines with creep"	borderDashSpec size < 5 ifTrue: [^ self].	borderDashSpec at: 4 put: (borderDashSpec at: 4) + (borderDashSpec at: 5).	self changed! !

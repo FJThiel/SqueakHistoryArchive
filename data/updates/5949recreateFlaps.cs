@@ -1,0 +1,1 @@
+'From Squeak3.7beta of ''1 April 2004'' [latest update: #5948] on 9 June 2004 at 4:18:40 pm'!"Change Set:		recreateFlapsDate:			9 June 2004Author:			Marcus DenkerTry opening a new morphic project: The flaps will bered-crossed.This changeset just executes Language recreateFlapsin the postscript to rebuild the Flaps "!"Postscript:"Language recreateFlaps.!

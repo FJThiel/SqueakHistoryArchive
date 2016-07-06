@@ -1,0 +1,1 @@
+'From Squeak3.1alpha of 28 February 2001 [latest update: #3760] on 16 March 2001 at 7:50:19 am'!"Change Set:		FixUIUCDirNameDate:			16 March 2001Author:			Dan IngallsFixes the directory name for the UIUC update server so that FTP access works."!"Postscript:Change the directory name."(ServerDirectory serverNamed: 'UpdatesExtUIUC') server: 'st.cs.uiuc.edu'!

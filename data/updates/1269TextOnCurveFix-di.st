@@ -1,0 +1,1 @@
+'From Squeak 2.4c of May 10, 1999 on 23 June 1999 at 10:20:18 am'!!TextOnCurve methodsFor: 'as yet unclassified' stamp: 'di 6/23/1999 10:17'!composeLinesFrom: start to: stop delta: delta into: newLines priorLines: priorLines	atY: startingY	^ self composeLinesFrom: start withLines: newLines atY: startingY! !
