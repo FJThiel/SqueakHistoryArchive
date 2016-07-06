@@ -1,0 +1,1 @@
+'From Squeak3.11alpha of 13 February 2010 [latest update: #9499] on 15 March 2010 at 8:32:30 am'!Notification subclass: #OutOfScopeNotification	instanceVariableNames: ''	classVariableNames: ''	poolDictionaries: ''	category: 'Compiler-Exceptions'!!OutOfScopeNotification methodsFor: 'as yet unclassified' stamp: 'RAA 2/5/2001 10:41'!defaultAction	self resume: false! !

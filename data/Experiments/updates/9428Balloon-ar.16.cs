@@ -1,0 +1,1 @@
+'From Squeak3.11alpha of 13 February 2010 [latest update: #9483] on 9 March 2010 at 11:11:23 am'!!GradientFillStyle class methodsFor: 'class initialization' stamp: 'ar 2/26/2010 23:02'!cleanUp	"Flush caches"	self initPixelRampCache! !

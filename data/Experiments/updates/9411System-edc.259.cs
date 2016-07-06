@@ -1,0 +1,1 @@
+'From Squeak3.11alpha of 13 February 2010 [latest update: #9483] on 9 March 2010 at 11:11:23 am'!!CodeLoader methodsFor: 'installing' stamp: 'ar 12/22/1999 15:02'!installSourceFiles	"Install the previously loaded source files"	sourceFiles == nil ifTrue:[^self].	sourceFiles do:[:req| self installSourceFile: req contentStream].	sourceFiles := nil.! !

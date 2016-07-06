@@ -1,0 +1,1 @@
+'From Squeak3.11alpha of 13 February 2010 [latest update: #9483] on 9 March 2010 at 11:11:23 am'!!TestCase class methodsFor: 'Accessing' stamp: 'jmv 2/2/2010 09:23'!testSelectors	^(self selectors asArray select: [ :each | 		(each beginsWith: 'test') and: [ each numArgs isZero ] ]) sort! !
